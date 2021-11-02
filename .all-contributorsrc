@@ -1,0 +1,14 @@
+{
+  "projectName": "vite-react-ts-extended",
+  "projectOwner": "ryota-murakami",
+  "repoType": "github",
+  "repoHost": "https://github.com/laststance/vite-react-ts-extended",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "none",
+  "contributors": [],
+  "contributorsPerLine": 7
+}
