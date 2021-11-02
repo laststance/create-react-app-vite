@@ -19,6 +19,11 @@ npx degit laststance/vite-react-ts-extended myapp
 cd myapp && yarn && yarn dev
 ```
 
+or npm
+```
+cd myapp && npm i && npm run dev
+```
+
 
 # License
 MIT
