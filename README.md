@@ -2,7 +2,7 @@
 
 > vite react-ts templete + eslint, jest, tailwindcss
 
-This is the official [Vite](https://vitejs.dev/) template(`npm init vite@latest myapp -- --template react-ts`) with the following additional tools set up.
+This is the official [Vite](https://vitejs.dev/) template(`npm init vite@latest myapp -- --template react-ts`) with the following additional set up.
 
 - [eslint-typescript](https://github.com/typescript-eslint/typescript-eslint) and [Prettier](https://prettier.io/) integration
 - [jest](https://jestjs.io/), [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/), [react-hooks-testing-library](https://github.com/testing-library/react-hooks-testing-library), [MSW](https://mswjs.io/)
