@@ -6,7 +6,10 @@ const config = {
   resetMocks: true,
   testEnvironment: 'jsdom',
   setupFilesAfterEnv: ['<rootDir>/jest/setupTests.ts'],
-  testMatch: ['<rootDir>/src/**/*.test.{js,jsx,ts,tsx}'],
+  testMatch: [
+    '<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}',
+    '<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}',
+  ],
   transform: {
     '^.+\\.[jt]sx?$': 'esbuild-jest',
     '^.+\\.css$': '<rootDir>/jest/cssTransform.js',
@@ -26,7 +29,7 @@ const config = {
     'jest-watch-typeahead/filename',
     'jest-watch-typeahead/testname',
   ],
-  collectCoverageFrom: ['<rootDir>/src/**/*.{js,jsx,ts,tsx}'],
+  collectCoverageFrom: ['<rootDir>/src/**/*.{js,jsx,ts,tsx}', '!src/**/*.d.ts'],
 }
 
 module.exports = config
