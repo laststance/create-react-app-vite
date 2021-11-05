@@ -16,12 +16,16 @@ npx degit laststance/vite-react-ts-extended myapp
 ```
 
 ```
-cd myapp && yarn && yarn dev
+cd myapp
+yarn install
+yarn dev
 ```
 
 or npm
 ```
-cd myapp && npm i && npm run dev
+cd myapp
+npm install
+npm run dev
 ```
 
 
