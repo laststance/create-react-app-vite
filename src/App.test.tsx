@@ -15,7 +15,7 @@ test('Working Counter', () => {
   const { getByText } = render(<App />)
   expect(getByText('count is: 0')).toBeInTheDocument()
 
-  const button = getByText('increment')
+  const button = getByText(/count is: \d/)
 
   act(() => userEvent.click(button))
   expect(getByText('count is: 1')).toBeInTheDocument()
