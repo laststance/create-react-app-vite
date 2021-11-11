@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 
 import logo from './logo.svg'
 import './App.css'
@@ -9,7 +9,6 @@ interface State {
 
 const App: React.FC = () => {
   const [count, setCount] = useState<State['count']>(0)
-  useEffect(() => {}, [])
 
   return (
     <main className="App">
@@ -19,12 +18,13 @@ const App: React.FC = () => {
         <p>
           <button
             type="button"
+            className="h-26 w-52 px-4 py-3 my-4 border border-white border-solid rounded"
             onClick={() => setCount((prevCount) => prevCount + 1)}
           >
-            increment
+            count is: {count}
           </button>
         </p>
-        <p>count is: {count}</p>
+
         <p>
           Edit <code>App.tsx</code> and save to test HMR updates.
         </p>
