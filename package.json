@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "license": "MIT",
   "scripts": {
-    "postinstall": "dev",
+    "postinstall": "npm run dev",
     "dev": "vite",
     "build": "tsc && vite build",
     "serve": "vite preview",
