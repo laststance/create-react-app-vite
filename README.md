@@ -8,6 +8,7 @@ This is the official [Vite](https://vitejs.dev/) template(`npm init vite@latest 
 - [jest](https://jestjs.io/), [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/), [react-hooks-testing-library](https://github.com/testing-library/react-hooks-testing-library), [MSW](https://mswjs.io/)
 - [tailwindcss](https://tailwindcss.com/)
 
+All npm package are keeping least release version powered by [Depfu](https://depfu.com/).
 
 # Installation
 
