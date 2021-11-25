@@ -6,5 +6,8 @@ export default defineConfig({
   plugins: [react()],
   build: {
     sourcemap: true,
-  }
+  },
+  server: {
+    open: true,
+  },
 })
