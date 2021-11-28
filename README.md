@@ -2,12 +2,15 @@
 
 > vite react-ts templete + eslint, jest, tailwindcss
 
+## [Trying this Online!](https://stackblitz.com/github/laststance/vite-react-ts-extended?file=src%2FApp.tsx)
+
 This is the official [Vite](https://vitejs.dev/) template(`npm init vite@latest myapp -- --template react-ts`) with the following additional set up.
 
 - [eslint-typescript](https://github.com/typescript-eslint/typescript-eslint) and [Prettier](https://prettier.io/) integration
 - [jest](https://jestjs.io/), [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/), [react-hooks-testing-library](https://github.com/testing-library/react-hooks-testing-library), [MSW](https://mswjs.io/)
 - [tailwindcss](https://tailwindcss.com/)
 
+All npm package are keeping least release version powered by [Depfu](https://depfu.com/).
 
 # Installation
 
