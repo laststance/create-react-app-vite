@@ -2,6 +2,8 @@
 
 > vite react-ts templete + eslint, jest, tailwindcss
 
+## [Trying this Online!](https://stackblitz.com/github/laststance/vite-react-ts-extended?file=src%2FApp.tsx)
+
 This is the official [Vite](https://vitejs.dev/) template(`npm init vite@latest myapp -- --template react-ts`) with the following additional set up.
 
 - [eslint-typescript](https://github.com/typescript-eslint/typescript-eslint) and [Prettier](https://prettier.io/) integration
