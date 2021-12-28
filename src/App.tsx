@@ -18,7 +18,6 @@ const App: React.FC = () => {
       axios
         .get('./docs_list')
         .then((response) => {
-          console.log(response)
           setState(({ count }) => {
             return { axiosDocs: response.data, count }
           })
