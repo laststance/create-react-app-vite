@@ -5,25 +5,19 @@ import logo from './logo.svg'
 
 import './App.css'
 
-interface State {
-  count: number
-  axiosDocs: string[]
-}
+type DocsList = Array<{ name: string; url: string }>
 
 const App: React.FC = () => {
-  const [state, setState] = useState<State>({ count: 0, axiosDocs: [] })
+  const [count, setCount] = useState(0)
+  const [docsList, setDocsList] = useState<DocsList>([])
 
   useEffect(() => {
-    setTimeout(() => {
-      axios
-        .get('./docs_list')
-        .then((response) => {
-          setState(({ count }) => {
-            return { axiosDocs: response.data, count }
-          })
-        })
-        .catch()
-    }, 5000)
+    axios
+      .get('./docs_list')
+      .then(({ data }) => {
+        setDocsList(data)
+      })
+      .catch()
   }, [])
 
   return (
@@ -35,21 +29,11 @@ const App: React.FC = () => {
           <button
             type="button"
             className="h-26 w-52 px-4 py-3 my-4 border border-white border-solid rounded"
-            onClick={() =>
-              setState(({ count, ...rest }) => {
-                return {
-                  count: count + 1,
-                  ...rest,
-                }
-              })
-            }
+            onClick={() => setCount(count + 1)}
           >
-            count is: {state.count}
+            count is: {count}
           </button>
         </p>
-        {state.axiosDocs.length
-          ? `${state.axiosDocs[0]}: ${state.axiosDocs[1]}`
-          : 'loading...'}
         <p>
           Edit <code>App.tsx</code> and save to test HMR updates.
         </p>
@@ -72,6 +56,23 @@ const App: React.FC = () => {
           >
             Vite Docs
           </a>
+          {docsList.length
+            ? docsList.map((v, i) => {
+                return (
+                  <span key={i}>
+                    {' | '}
+                    <a
+                      className="App-link"
+                      href={v.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {v.name}
+                    </a>
+                  </span>
+                )
+              })
+            : false}
         </p>
       </header>
     </main>
