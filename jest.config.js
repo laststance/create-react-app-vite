@@ -5,16 +5,16 @@ const config = {
   notifyMode: 'success-change',
   resetMocks: true,
   testEnvironment: 'jsdom',
-  setupFilesAfterEnv: ['<rootDir>/.jest/setupTests.ts'],
+  setupFilesAfterEnv: ['<rootDir>/jest/setupTests.ts'],
   testMatch: [
     '<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}',
     '<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}',
   ],
   transform: {
     '^.+\\.[jt]sx?$': 'esbuild-jest',
-    '^.+\\.css$': '<rootDir>/.jest/cssTransform.js',
+    '^.+\\.css$': '<rootDir>/jest/cssTransform.js',
     '^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)':
-      '<rootDir>/.jest/fileTransform.js',
+      '<rootDir>/jest/fileTransform.js',
   },
   transformIgnorePatterns: [
     '[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$',
