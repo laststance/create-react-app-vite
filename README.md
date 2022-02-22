@@ -6,6 +6,8 @@
 
 ## [Trying this Online!](https://stackblitz.com/github/laststance/vite-react-ts-extended?file=src%2FApp.tsx)
 
+<img src="https://digital3.nyc3.cdn.digitaloceanspaces.com/ext.png" />
+
 This is the official [Vite](https://vitejs.dev/) template(`npm init vite@latest myapp -- --template react-ts`) and some extended setup.
 
 - [eslint-typescript](https://github.com/typescript-eslint/typescript-eslint) and [Prettier](https://prettier.io/) integration. Rules are 100% my personal setup 💅
