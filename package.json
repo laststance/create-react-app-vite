@@ -51,7 +51,7 @@
     "jest-watch-typeahead": "^1.0.0",
     "msw": "^0.38.2",
     "node-notifier": "^10.0.1",
-    "postcss": "^8.4.7",
+    "postcss": "^8.4.8",
     "prettier": "^2.5.0",
     "prettier-plugin-tailwind-css": "^1.5.0",
     "serve": "^13.0.2",
