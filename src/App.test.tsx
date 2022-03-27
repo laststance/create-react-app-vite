@@ -7,32 +7,32 @@ import { act } from 'react-dom/test-utils'
 import App from './App'
 
 test('Show App Component', () => {
-  render(<App />)
-
-  expect(screen.getByText('Hello Vite + React!')).toBeInTheDocument()
+    render(<App />)
+    expect(screen.getByText('Hello Vite + React!')).toBeInTheDocument()
 })
 
 test('Working Counter', () => {
-  const { getByText } = render(<App />)
-  expect(getByText('count is: 0')).toBeInTheDocument()
+    const { getByText } = render(<App />)
 
-  const button = getByText(/count is: \d/)
+    expect(getByText('count is: 0')).toBeInTheDocument()
 
-  act(() => userEvent.click(button))
-  expect(getByText('count is: 1')).toBeInTheDocument()
+    const button = getByText(/count is: \d/)
 
-  act(() => userEvent.click(button))
-  expect(getByText('count is: 2')).toBeInTheDocument()
+    act(() => userEvent.click(button))
+    expect(getByText('count is: 1')).toBeInTheDocument()
 
-  act(() => userEvent.click(button))
-  expect(getByText('count is: 3')).toBeInTheDocument()
+    act(() => userEvent.click(button))
+    expect(getByText('count is: 2')).toBeInTheDocument()
+
+    act(() => userEvent.click(button))
+    expect(getByText('count is: 3')).toBeInTheDocument()
 })
 
 test('working msw', async () => {
-  render(<App />)
-  await waitFor(() => {
-    expect(screen.getByText('Axios')).toBeInTheDocument()
-    expect(screen.getByText('MSW')).toBeInTheDocument()
-    expect(screen.getByText('Tailwind CSS')).toBeInTheDocument()
-  })
+    render(<App />)
+    await waitFor(() => {
+        expect(screen.getByText('Axios')).toBeInTheDocument()
+        expect(screen.getByText('MSW')).toBeInTheDocument()
+        expect(screen.getByText('UnoCSS')).toBeInTheDocument()
+    })
 })
