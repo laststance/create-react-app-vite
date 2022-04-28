@@ -15,7 +15,7 @@
     "validate": "./scripts/validate"
   },
   "dependencies": {
-    "axios": "^0.27.1",
+    "axios": "^0.27.2",
     "react": "^18.0.0-rc.0",
     "react-dom": "^18.0.0-rc.0"
   },
