@@ -47,7 +47,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react-hooks": "^4.5.0",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^27.5.1",
+    "jest": "^28.0.3",
     "jest-watch-typeahead": "^1.0.0",
     "msw": "^0.39.2",
     "node-notifier": "^10.0.1",
