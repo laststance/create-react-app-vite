@@ -11,7 +11,7 @@
     "lint": "eslint . --ext .ts,.tsx,.js,jsx",
     "lint:fix": "eslint . --ext .ts,.tsx,.js,jsx --fix",
     "typecheck": "tsc --noEmit",
-    "prettier": "prettier --write src/**/*.css .github/**/*.yml package.json .eslintrc index.html tsconfig.json README.md",
+    "prettier": "prettier --write \"**/*.+(json|yml|css|md|mdx)\"",
     "validate": "./scripts/validate"
   },
   "dependencies": {
