@@ -11,6 +11,7 @@
     "lint:fix": "eslint . --ext .ts,.tsx,.js,jsx --fix",
     "typecheck": "tsc --noEmit",
     "prettier": "prettier --write \"**/*.+(json|yml|css|md|mdx)\"",
+    "clean": "rimraf node_modules yarn.lock dist",
     "validate": "./scripts/validate"
   },
   "dependencies": {
@@ -54,6 +55,7 @@
     "postcss": "^8.4.13",
     "prettier": "^2.6.1",
     "prettier-plugin-tailwind-css": "^1.5.0",
+    "rimraf": "^3.0.2",
     "serve": "^13.0.2",
     "tailwindcss": "^3.0.23",
     "typescript": "^4.6.4",
