@@ -8,6 +8,7 @@
   "plugins": [
     "jsx-a11y",
     "import",
+    "sort-keys-fix",
     "react-hooks",
     "@typescript-eslint",
     "prettier"
@@ -69,6 +70,7 @@
     "import/export": "error",
     "import/no-named-as-default": "warn",
     "import/no-duplicates": "error",
+    "sort-keys-fix/sort-keys-fix": "warn",
     "@typescript-eslint/consistent-type-imports": "warn",
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/ban-types": "off",
