@@ -1,9 +1,16 @@
 {
-  "root": true,
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
   "extends": [
-    "plugin:@typescript-eslint/recommended",
     "plugin:jsx-a11y/recommended"
   ],
+  "globals": {
+    "JSX": "readonly"
+  },
   "parser": "@typescript-eslint/parser",
   "plugins": [
     "jsx-a11y",
@@ -13,49 +20,25 @@
     "@typescript-eslint",
     "prettier"
   ],
-  "env": {
-    "browser": true,
-    "node": true,
-    "es6": true,
-    "jest": true
-  },
-  "globals": {
-    "JSX": "readonly"
-  },
-  "settings": {
-    "react": {
-      "version": "detect"
-    },
-    "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".tsx"]
-    },
-    "import/resolver": {
-      "node": {
-        "extensions": [".js", ".jsx", ".ts", ".tsx"]
-      },
-      "typescript": {
-        "alwaysTryTypes": true,
-        // always try to resolve types under `<root>@types` directory even it doesn't contain any source code, like `@types/unist`
-        "project": ["tsconfig.json"]
-      }
-    }
-  },
+  "root": true,
   "rules": {
-    "no-alert": "error",
-    "no-console": "error",
-    "react-hooks/rules-of-hooks": "error",
-    "prettier/prettier": [
-      "warn",
-      {},
-      {
-        "properties": {
-          "usePrettierrc": true
-        }
-      }
-    ],
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/prefer-as-const": "warn",
+    "import/default": "error",
+    "import/export": "error",
+    "import/named": "error",
+    "import/no-anonymous-default-export": "off",
+    "import/no-duplicates": "error",
+    "import/no-named-as-default": "error",
+    "import/no-named-as-default-member": "off",
+    "import/no-unresolved": "error",
     "import/order": [
       "warn",
       {
+        "alphabetize": {
+          "caseInsensitive": true,
+          "order": "asc"
+        },
         "groups": [
           "builtin",
           "external",
@@ -65,34 +48,50 @@
           "index",
           "object"
         ],
-        "newlines-between": "always",
-        "alphabetize": {
-          "order": "asc",
-          "caseInsensitive": true
+        "newlines-between": "always"
+      }
+    ],
+    "no-alert": "error",
+    "no-console": "error",
+    "no-dupe-keys": "error",
+    "no-unused-private-class-members": "error",
+    "prettier/prettier": [
+      "warn",
+      {},
+      {
+        "properties": {
+          "usePrettierrc": true
         }
       }
     ],
-    "import/named": "error",
-    "import/default": "error",
-    "import/export": "error",
-    "import/no-named-as-default": "warn",
-    "import/no-duplicates": "error",
-    "sort-keys-fix/sort-keys-fix": "warn",
-    "@import/no-named-as-default-member": "off",
-    "@typescript-eslint/consistent-type-imports": "warn",
-    "@typescript-eslint/no-non-null-assertion": "off",
-    "@typescript-eslint/no-explicit-any": "off",
-    "@typescript-eslint/ban-types": "off",
-    "@typescript-eslint/ban-ts-comment": "off",
-    "@typescript-eslint/no-empty-function": "off"
+    "react-hooks/rules-of-hooks": "error",
+    "sort-keys-fix/sort-keys-fix": "warn"
   },
-  "overrides": [
-    {
-      "files": ["*.js"],
-      "rules": {
-        "@typescript-eslint/explicit-module-boundary-types": ["off"],
-        "@typescript-eslint/no-var-requires": ["off"]
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [
+        ".ts",
+        ".tsx"
+      ]
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      },
+      "typescript": {
+        "alwaysTryTypes": true,
+        "project": [
+          "tsconfig.json"
+        ]
       }
+    },
+    "react": {
+      "version": "detect"
     }
-  ]
+  }
 }
