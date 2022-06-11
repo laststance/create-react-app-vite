@@ -2,7 +2,7 @@
   "projectName": "vite-react-ts-extended",
   "projectOwner": "laststance",
   "repoType": "github",
-  "repoHost": "https://github.com/laststance/vite-react-ts-extended",
+  "repoHost": "https://github.com",
   "files": [
     "README.md"
   ],
@@ -20,7 +20,17 @@
         "doc",
         "test"
       ]
+    },
+    {
+      "login": "nvh95",
+      "name": "Hung Viet Nguyen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8603085?v=4",
+      "profile": "https://hung.dev",
+      "contributions": [
+        "code"
+      ]
     }
   ],
-  "contributorsPerLine": 7
+  "contributorsPerLine": 7,
+  "skipCi": true
 }
