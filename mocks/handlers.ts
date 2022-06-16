@@ -3,7 +3,6 @@ import { rest } from 'msw'
 export const handlers = [
   rest.get('/docs_list', (req, res, ctx) => {
     const data = [
-      { name: 'Axios', url: 'https://axios-http.com/' },
       { name: 'MSW', url: 'https://mswjs.io/' },
       { name: 'Tailwind CSS', url: 'https://tailwindcss.com/' },
     ]

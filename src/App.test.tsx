@@ -28,10 +28,9 @@ test('Working Counter', async () => {
   expect(getByText('count is: 3')).toBeInTheDocument()
 })
 
-test('working msw', async () => {
+test('working with msw', async () => {
   render(<App />)
   await waitFor(() => {
-    expect(screen.getByText('Axios')).toBeInTheDocument()
     expect(screen.getByText('MSW')).toBeInTheDocument()
     expect(screen.getByText('Tailwind CSS')).toBeInTheDocument()
   })

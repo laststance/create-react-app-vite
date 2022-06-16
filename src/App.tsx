@@ -1,4 +1,3 @@
-import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 
 import logo from './logo.svg'
@@ -12,9 +11,9 @@ const App: React.FC = () => {
   const [docsList, setDocsList] = useState<DocsList>([])
 
   useEffect(() => {
-    axios
-      .get('./docs_list')
-      .then(({ data }) => {
+    fetch('./docs_list')
+      .then((res) => res.json())
+      .then((data) => {
         setDocsList(data)
       })
       .catch()
