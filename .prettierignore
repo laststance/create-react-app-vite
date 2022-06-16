@@ -3,3 +3,5 @@ node_modules
 .eslintignore
 .gitignore
 LICENSE
+dist
+dist-ssr
