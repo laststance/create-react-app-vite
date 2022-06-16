@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "serve": "serve dist",
     "test": "jest",
     "test:watch": "jest --watchAll",
@@ -16,7 +16,6 @@
     "validate": "./scripts/validate"
   },
   "dependencies": {
-    "axios": "^0.27.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
