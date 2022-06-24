@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
+import './index.css'
 import logo from './logo.svg'
 
 import './App.css'
