@@ -8,7 +8,7 @@
 
 <img src="https://digital3.nyc3.cdn.digitaloceanspaces.com/ext.png" />
 
-This is the official [Vite](https://vitejs.dev/) template(`npm init vite@latest myapp -- --template react-ts`) and some extended setup.
+This is the official [Vite](https://vitejs.dev/) [react-ts](https://stackblitz.com/edit/vitejs-vite-is3dmk?file=index.html&terminal=dev) template(`npm init vite@latest myapp -- --template react-ts`) and some extended setup.
 
 - [eslint-typescript](https://github.com/typescript-eslint/typescript-eslint) and [Prettier](https://prettier.io/) integration. Rules are 100% my personal setup 💅
 - [Jest](https://jestjs.io/), [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/), [MSW](https://mswjs.io/)
