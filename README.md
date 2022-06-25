@@ -4,7 +4,7 @@
 > Create plain and lightweight React+TS programming environment with familiar pre-setup tooling  
 > eslint/prettier, jest/TS/react-testing-library/msw, tailwindcss, CI.
 
-## [Trying this Online!](https://codesandbox.io/s/vite-react-ts-extended-cbgyfz?file=/src/App.tsx)
+## [Try this Online!](https://codesandbox.io/s/laststance-vite-react-ts-extended-je09qc?file=/src/App.tsx)
 
 <img src="https://digital3.nyc3.cdn.digitaloceanspaces.com/ext.png" />
 
