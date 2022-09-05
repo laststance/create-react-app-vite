@@ -54,7 +54,7 @@
     "jest": "^28.1.1",
     "jest-environment-jsdom": "^29.0.1",
     "jest-watch-typeahead": "^2.1.1",
-    "msw": "^0.46.1",
+    "msw": "^0.47.0",
     "node-notifier": "^10.0.1",
     "postcss": "^8.4.16",
     "prettier": "^2.7.0",
