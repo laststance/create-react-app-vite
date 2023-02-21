@@ -1,10 +1,10 @@
-# create-react-app-alter [![Typecheck](https://github.com/laststance/vite-react-ts-alter/actions/workflows/typecheck.yml/badge.svg)](https://github.com/laststance/vite-react-ts-alter/actions/workflows/typecheck.yml) [![Test](https://github.com/laststance/vite-react-ts-alter/actions/workflows/test.yml/badge.svg)](https://github.com/laststance/vite-react-ts-alter/actions/workflows/test.yml) [![Build](https://github.com/laststance/vite-react-ts-alter/actions/workflows/build.yml/badge.svg)](https://github.com/laststance/vite-react-ts-alter/actions/workflows/build.yml) [![Lint](https://github.com/laststance/vite-react-ts-alter/actions/workflows/lint.yml/badge.svg)](https://github.com/laststance/vite-react-ts-alter/actions/workflows/lint.yml) [![Depfu](https://badges.depfu.com/badges/6c7775918ccc8647160750e168617a65/overview.svg)](https://depfu.com/github/laststance/vite-react-ts-alter?project_id=32682)
+# create-react-app-vite [![Typecheck](https://github.com/laststance/vite-react-ts-alter/actions/workflows/typecheck.yml/badge.svg)](https://github.com/laststance/vite-react-ts-alter/actions/workflows/typecheck.yml) [![Test](https://github.com/laststance/vite-react-ts-alter/actions/workflows/test.yml/badge.svg)](https://github.com/laststance/vite-react-ts-alter/actions/workflows/test.yml) [![Build](https://github.com/laststance/vite-react-ts-alter/actions/workflows/build.yml/badge.svg)](https://github.com/laststance/vite-react-ts-alter/actions/workflows/build.yml) [![Lint](https://github.com/laststance/vite-react-ts-alter/actions/workflows/lint.yml/badge.svg)](https://github.com/laststance/vite-react-ts-alter/actions/workflows/lint.yml) [![Depfu](https://badges.depfu.com/badges/6c7775918ccc8647160750e168617a65/overview.svg)](https://depfu.com/github/laststance/vite-react-ts-alter?project_id=32682)
 
 > My CRA alternative by Vite.  
 > Create plain and lightweight React+TS programming environment with familiar pre-setup tooling  
 > eslint/prettier, jest/TS/react-testing-library/msw, tailwindcss, CI.
 
-## [Try this Online!](https://codesandbox.io/s/laststance-create-react-app-alter-je09qc?file=/src/App.tsx)
+## [Try this Online!](https://codesandbox.io/s/laststance-create-react-app-vite-je09qc?file=/src/App.tsx)
 
 <img src="https://digital3.nyc3.cdn.digitaloceanspaces.com/ext.png" />
 
@@ -21,7 +21,7 @@ All npm package are keeping least release version powered by [Depfu](https://dep
 # Installation
 
 ```
-npx degit laststance/create-react-app-alter myapp
+npx degit laststance/create-react-app-vite myapp
 ```
 
 ### yarn
@@ -84,8 +84,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="http://ryota-murakami.github.io/"><img src="https://avatars1.githubusercontent.com/u/5501268?s=400&u=7bf6b1580b95930980af2588ef0057f3e9ec1ff8&v=4?s=100" width="100px;" alt=""/><br /><sub><b>ryota-murakami</b></sub></a><br /><a href="https://github.com/laststance/create-react-app-alter/commits?author=ryota-murakami" title="Code">💻</a> <a href="https://github.com/laststance/create-react-app-alter/commits?author=ryota-murakami" title="Documentation">📖</a> <a href="https://github.com/laststance/create-react-app-alter/commits?author=ryota-murakami" title="Tests">⚠️</a></td>
-    <td align="center"><a href="https://hung.dev"><img src="https://avatars.githubusercontent.com/u/8603085?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Hung Viet Nguyen</b></sub></a><br /><a href="https://github.com/laststance/create-react-app-alter/commits?author=nvh95" title="Code">💻</a></td>
+    <td align="center"><a href="http://ryota-murakami.github.io/"><img src="https://avatars1.githubusercontent.com/u/5501268?s=400&u=7bf6b1580b95930980af2588ef0057f3e9ec1ff8&v=4?s=100" width="100px;" alt=""/><br /><sub><b>ryota-murakami</b></sub></a><br /><a href="https://github.com/laststance/create-react-app-vite/commits?author=ryota-murakami" title="Code">💻</a> <a href="https://github.com/laststance/create-react-app-vite/commits?author=ryota-murakami" title="Documentation">📖</a> <a href="https://github.com/laststance/create-react-app-vite/commits?author=ryota-murakami" title="Tests">⚠️</a></td>
+    <td align="center"><a href="https://hung.dev"><img src="https://avatars.githubusercontent.com/u/8603085?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Hung Viet Nguyen</b></sub></a><br /><a href="https://github.com/laststance/create-react-app-vite/commits?author=nvh95" title="Code">💻</a></td>
   </tr>
 </table>
 
