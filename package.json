@@ -39,7 +39,7 @@
     "@typescript-eslint/parser": "^5.54.1",
     "@vitejs/plugin-react-swc": "^3.2.0",
     "all-contributors-cli": "^6.24.0",
-    "autoprefixer": "^10.4.13",
+    "autoprefixer": "^10.4.14",
     "concurrently": "^7.6.0",
     "esbuild-jest": "^0.5.0",
     "eslint": "^8.35.0",
