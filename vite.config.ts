@@ -7,6 +7,7 @@ export default defineConfig({
     sourcemap: true,
   },
   plugins: [react()],
+  publicDir: 'public',
   server: {
     host: true,
   },
