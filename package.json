@@ -58,7 +58,7 @@
     "msw": "^1.1.1",
     "node-notifier": "^10.0.1",
     "postcss": "^8.4.21",
-    "prettier": "^2.8.4",
+    "prettier": "^2.8.6",
     "prettier-plugin-tailwind-css": "^1.5.0",
     "rimraf": "^4.4.0",
     "serve": "^14.2.0",
