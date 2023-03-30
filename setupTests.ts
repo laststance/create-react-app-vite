@@ -5,8 +5,6 @@ expect.extend(matchers)
 
 import { server } from './mocks/server'
 
-beforeEach(() => server.resetHandlers())
-
 beforeAll(() => server.listen({ onUnhandledRequest: 'error' }))
 
 //  Close server after all tests
