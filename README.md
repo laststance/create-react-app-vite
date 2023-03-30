@@ -13,7 +13,7 @@ This is a Vite template top of the official [Vite](https://vitejs.dev/) [react-t
 I'd like to keep CRA like experience as much as possible, So improving/adding feature Rull Request is really welcome!
 
 - [eslint-typescript](https://github.com/typescript-eslint/typescript-eslint) and [Prettier](https://prettier.io/) integration. Rules are 100% my personal setup 💅
-- [Jest](https://jestjs.io/), [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/), [MSW](https://mswjs.io/)
+- [Vitest](https://vitest.dev/), [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/), [MSW](https://mswjs.io/)
 - [tailwindcss](https://tailwindcss.com/)
 - [Github Actions](https://github.com/features/actions)
 
