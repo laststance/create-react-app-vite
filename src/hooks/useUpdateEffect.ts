@@ -3,7 +3,7 @@ import { useRef, useEffect } from 'react'
  * Simulate componentDidUpdate() method of Class Component
  * https://reactjs.org/docs/react-component.html#componentdidupdate
  */
-const useDidUpdateEffect = (
+const useUpdateEffect = (
   effect: AnyFunction,
   deps: any[] | undefined = undefined
 ): void => {
@@ -18,4 +18,4 @@ const useDidUpdateEffect = (
   }, deps)
 }
 
-export default useDidUpdateEffect
+export default useUpdateEffect

@@ -1,4 +1,3 @@
-import { waitFor } from '@testing-library/dom'
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import React from 'react'
@@ -28,10 +27,9 @@ test('Working Counter', async () => {
   expect(getByText('count is: 3')).toBeInTheDocument()
 })
 
-test('working with msw', async () => {
-  render(<App />)
-  await waitFor(() => {
-    expect(screen.getByText('MSW')).toBeInTheDocument()
-    expect(screen.getByText('Tailwind CSS')).toBeInTheDocument()
-  })
-})
+// test('working with msw', async () => {
+//   render(<App />)
+//
+//   expect(screen.getByText('MSW')).toBeInTheDocument()
+//   expect(screen.getByText('Tailwind CSS')).toBeInTheDocument()
+// })

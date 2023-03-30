@@ -12,7 +12,7 @@ const App: React.FC = () => {
   const [docsList, setDocsList] = useState<DocsList>([])
 
   useEffect(() => {
-    fetch('./docs_list')
+    fetch('http://localhost:3000/api/docs_list')
       .then((res) => res.json())
       .then((data) => {
         setDocsList(data)
