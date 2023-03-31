@@ -7,7 +7,7 @@ import App from './App'
 test('Show App Component', () => {
   render(<App />)
 
-  expect(screen.getByText('Hello Vite + React!')).toBeInTheDocument()
+  expect(screen.getByText("I'm REACT_APP_TEXT from .env")).toBeInTheDocument()
 })
 
 test('Working Counter', async () => {
@@ -27,9 +27,12 @@ test('Working Counter', async () => {
   expect(getByText('count is: 3')).toBeInTheDocument()
 })
 
-// test('working with msw', async () => {
-//   render(<App />)
-//
-//   expect(screen.getByText('MSW')).toBeInTheDocument()
-//   expect(screen.getByText('Tailwind CSS')).toBeInTheDocument()
-// })
+test.skip('working with msw', async () => {
+  render(<App />)
+  await sleep(9000)
+
+  expect(screen.getByText('MSW')).toBeInTheDocument()
+  expect(screen.getByText('Tailwind CSS')).toBeInTheDocument()
+})
+
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
