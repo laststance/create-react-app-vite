@@ -24,7 +24,7 @@ const App: React.FC = () => {
     <main className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
+        <p>{process.env.REACT_APP_TEXT}</p>
         <p>
           <button
             type="button"
