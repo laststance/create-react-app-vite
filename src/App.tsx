@@ -1,3 +1,4 @@
+import fetch from 'cross-fetch'
 import React, { useEffect, useState } from 'react'
 
 import './index.css'
@@ -17,7 +18,6 @@ const App: React.FC = () => {
       .then((data) => {
         setDocsList(data)
       })
-      .catch()
   }, [])
 
   return (

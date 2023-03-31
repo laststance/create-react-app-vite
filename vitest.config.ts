@@ -3,8 +3,7 @@ import { defineConfig } from 'vitest/config'
 export default defineConfig({
   plugins: [EnvironmentPlugin(['REACT_APP_TEXT'])],
   test: {
-    dangerouslyIgnoreUnhandledErrors: true,
-    environment: 'happy-dom',
+    environment: 'jsdom',
     globals: true,
     setupFiles: ['./setupTests.ts'],
   },

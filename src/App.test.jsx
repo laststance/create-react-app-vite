@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react'
+import { render, screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import React from 'react'
 
@@ -27,12 +27,11 @@ test('Working Counter', async () => {
   expect(getByText('count is: 3')).toBeInTheDocument()
 })
 
-test.skip('working with msw', async () => {
+test('working with msw', async () => {
   render(<App />)
-  await sleep(9000)
 
-  expect(screen.getByText('MSW')).toBeInTheDocument()
-  expect(screen.getByText('Tailwind CSS')).toBeInTheDocument()
+  await waitFor(() => {
+    expect(screen.getByText('MSW')).toBeInTheDocument()
+    expect(screen.getByText('Tailwind CSS')).toBeInTheDocument()
+  })
 })
-
-const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
