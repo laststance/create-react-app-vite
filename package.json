@@ -16,7 +16,7 @@
     "lint:fix": "eslint . --ext .ts,.tsx,.js,jsx --fix",
     "typecheck": "tsc --noEmit",
     "prettier": "prettier --write \"**/*.+(json|yml|css|md|mdx)\"",
-    "clean": "rimraf node_modules yarn.lock package-lock.json dist",
+    "clean": "rimraf node_modules package-lock.json dist",
     "validate": "./scripts/validate"
   },
   "dependencies": {
