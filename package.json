@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "license": "MIT",
   "msw": {
-    "workerDirectory": "."
+    "workerDirectory": "public"
   },
   "scripts": {
     "start": "vite",
