@@ -6,8 +6,8 @@
     "workerDirectory": "."
   },
   "scripts": {
-    "dev": "vite",
     "start": "vite",
+    "dev": "vite",
     "build": "vite build",
     "serve": "serve dist",
     "test": "vitest --run",
