@@ -1,6 +1,6 @@
 import type { Dispatch, SetStateAction } from 'react'
 
-export declare global {
+declare global {
   type AnyFunction = (...args: any[]) => any
 }
 
