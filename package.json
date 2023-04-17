@@ -1,6 +1,6 @@
 {
   "name": "create-react-app-vite",
-  "version": "2.0.0",
+  "version": "0.3.0",
   "license": "MIT",
   "msw": {
     "workerDirectory": "public"
