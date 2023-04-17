@@ -37,6 +37,8 @@ npm run validate
 npm start
 ```
 
+If you don't need TailwindCSS, run npm run remove:tailwind after npm install.
+
 ### Commands
 
 ```sh
@@ -51,6 +53,7 @@ npm run build     # build production bundle to 'dist' directly
 npm run prettier  # run prettier for json|yml|css|md|mdx files
 npm run clean     # remove 'node_modules' 'yarn.lock' 'dist' completely
 npm run serve     # launch server for production bundle in local
+npm run remove:tailwind # remove TailwindCSS
 ```
 
 
