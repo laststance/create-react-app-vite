@@ -1,6 +1,5 @@
 # create-react-app-vite [![Typecheck](https://github.com/laststance/create-react-app-vite/actions/workflows/typecheck.yml/badge.svg)](https://github.com/laststance/vite-react-ts-alter/actions/workflows/typecheck.yml) [![Test](https://github.com/laststance/create-react-app-vite/actions/workflows/test.yml/badge.svg)](https://github.com/laststance/create-react-app-vite/actions/workflows/test.yml) [![Build](https://github.com/laststance/create-react-app-vite/actions/workflows/build.yml/badge.svg)](https://github.com/laststance/create-react-app-vite/actions/workflows/build.yml) [![Lint](https://github.com/laststance/create-react-app-vite/actions/workflows/lint.yml/badge.svg)](https://github.com/laststance/create-react-app-vite/actions/workflows/lint.yml) [![Depfu](https://badges.depfu.com/badges/6c7775918ccc8647160750e168617a65/overview.svg)](https://depfu.com/github/laststance/create-react-app-vite?project_id=32682)
 
-
 > Simple CRA style Vite teimpate.  
 > Create plain and lightweight React+TS programming environment.  
 > And a easy migration base for create-react-app to Vite.
@@ -12,7 +11,7 @@
 This is a Vite template top of the official [Vite](https://vitejs.dev/) [react-ts](https://stackblitz.com/edit/vitejs-vite-is3dmk?file=index.html&terminal=dev) template(`npm init vite@latest myapp -- --template react-ts`) and some extended setup.  
 I'd like to keep CRA like experience as much as possible, So improving/adding feature Rull Request is really welcome!
 
-- Support CRA's [Custom Environment Variables](https://create-react-app.dev/docs/adding-custom-environment-variables/) like `REACT_APP_`. 
+- Support CRA's [Custom Environment Variables](https://create-react-app.dev/docs/adding-custom-environment-variables/) like `REACT_APP_`.
 - [eslint-typescript](https://github.com/typescript-eslint/typescript-eslint) and [Prettier](https://prettier.io/) integration. Rules are 100% my personal setup 💅
 - [Vitest](https://vitest.dev/), [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/), [MSW](https://mswjs.io/)
 - [tailwindcss](https://tailwindcss.com/)
@@ -25,8 +24,6 @@ All npm package are keeping least release version powered by [Depfu](https://dep
 ```
 npx degit laststance/create-react-app-vite myapp
 ```
-
-
 
 ### npm
 
@@ -42,20 +39,19 @@ If you don't need TailwindCSS, run npm run remove:tailwind after npm install.
 ### Commands
 
 ```sh
-npm run dev       # start development server
-npm run start     # start development server
-npm run validate  # run test,lint,build,typecheck concurrently
-npm run test      # run jest
-npm run lint      # run eslint
-npm run lint:fix  # run eslint with --fix option
-npm run typecheck # run TypeScript compiler check
-npm run build     # build production bundle to 'dist' directly
-npm run prettier  # run prettier for json|yml|css|md|mdx files
-npm run clean     # remove 'node_modules' 'yarn.lock' 'dist' completely
-npm run serve     # launch server for production bundle in local
+npm run dev             # start development server
+npm run start           # start development server
+npm run validate        # run test,lint,build,typecheck concurrently
+npm run test            # run jest
+npm run lint            # run eslint
+npm run lint:fix        # run eslint with --fix option
+npm run typecheck       # run TypeScript compiler check
+npm run build           # build production bundle to 'dist' directly
+npm run prettier        # run prettier for json|yml|css|md|mdx files
+npm run clean           # remove 'node_modules' 'yarn.lock' 'dist' completely
+npm run serve           # launch server for production bundle in local
 npm run remove:tailwind # remove TailwindCSS
 ```
-
 
 # Background
 
