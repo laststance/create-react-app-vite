@@ -37,38 +37,20 @@ npm run validate
 npm start
 ```
 
-### pnpm
-
-```sh
-cd myapp
-pnpm i
-pnpm validate
-pnpm start
-```
-
-### yarn
-
-```sh
-cd myapp
-yarn
-yarn validate
-yarn start
-```
-
 ### Commands
 
 ```sh
-yarn dev       # start development server
-yarn start     # start development server
-yarn validate  # run test,lint,build,typecheck concurrently
-yarn test      # run jest
-yarn lint      # run eslint
-yarn lint:fix  # run eslint with --fix option
-yarn typecheck # run TypeScript compiler check
-yarn build     # build production bundle to 'dist' directly
-yarn prettier  # run prettier for json|yml|css|md|mdx files
-yarn clean     # remove 'node_modules' 'yarn.lock' 'dist' completely
-yarn serve     # launch server for production bundle in local
+npm run dev       # start development server
+npm run start     # start development server
+npm run validate  # run test,lint,build,typecheck concurrently
+npm run test      # run jest
+npm run lint      # run eslint
+npm run lint:fix  # run eslint with --fix option
+npm run typecheck # run TypeScript compiler check
+npm run build     # build production bundle to 'dist' directly
+npm run prettier  # run prettier for json|yml|css|md|mdx files
+npm run clean     # remove 'node_modules' 'yarn.lock' 'dist' completely
+npm run serve     # launch server for production bundle in local
 ```
 
 
