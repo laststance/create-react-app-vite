@@ -17,7 +17,8 @@
     "typecheck": "tsc --noEmit",
     "prettier": "prettier --write \"**/*.+(json|yml|css|md|mdx)\"",
     "clean": "rimraf node_modules package-lock.json dist",
-    "validate": "./scripts/validate"
+    "validate": "./scripts/validate",
+    "remove:tailwind": "./scripts/remove_tailwind"
   },
   "dependencies": {
     "react": "^18.2.0",
