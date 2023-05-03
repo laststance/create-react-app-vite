@@ -55,7 +55,7 @@
     "msw": "^1.2.1",
     "postcss": "^8.4.23",
     "prettier": "^2.8.8",
-    "prettier-plugin-tailwind-css": "^1.5.0",
+    "prettier-plugin-tailwindcss": "^0.2.8",
     "rimraf": "^5.0.0",
     "serve": "^14.2.0",
     "tailwindcss": "^3.3.2",

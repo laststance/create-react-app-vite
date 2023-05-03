@@ -28,7 +28,7 @@ const App: React.FC = () => {
         <p>
           <button
             type="button"
-            className="h-26 w-52 px-4 py-3 my-4 border border-white border-solid rounded"
+            className="h-26 my-4 w-52 rounded border border-solid border-white px-4 py-3"
             onClick={() => setCount(count + 1)}
           >
             count is: {count}
