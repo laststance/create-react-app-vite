@@ -1,9 +1,10 @@
 #!/usr/bin/env node
+/* eslint-disable no-console */
 
+const { execSync } = require('node:child_process')
 const fs = require('node:fs')
 const path = require('node:path')
 const { chdir, exit } = require('node:process')
-const { execSync } = require('node:child_process')
 
 const rootDir = path.join(__dirname, '..')
 
@@ -14,7 +15,10 @@ function removeTailwind() {
     fs.unlinkSync(rootDir + '/tailwind.config.js')
     console.log('remove tailwind.config.js')
   } catch (e) {
-    if (e.message.includes('no such file or directory')) console.log('postcss.config.js/tailwind.config.js has already been removed.')
+    if (e.message.includes('no such file or directory'))
+      console.log(
+        'postcss.config.js/tailwind.config.js has already been removed.'
+      )
   }
 
   // npm unlinstall
@@ -48,10 +52,11 @@ function removeTailwind() {
   chdir(rootDir)
   // execSync return null when command successful
   const res = execSync(uninstallCommand, {
-    stdio: [0, 1, 2]
+    stdio: [0, 1, 2],
   })
 
-  if (res !== null && res.status !== 0) console.error('Command Failed: ' + uninstallCommand)
+  if (res !== null && res.status !== 0)
+    console.error('Command Failed: ' + uninstallCommand)
 
   console.log(tailwindPackages.join('\n'))
   console.log('Above packages uninstall has been successful.')

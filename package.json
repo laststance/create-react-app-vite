@@ -18,7 +18,7 @@
     "prettier": "prettier --write \"**/*.+(json|yml|css|md|mdx)\"",
     "clean": "rimraf node_modules package-lock.json dist",
     "validate": "./scripts/validate",
-    "remove:tailwind": "./scripts/remove_tailwind"
+    "remove:tailwind": "scripts/remove_tailwind.js"
   },
   "dependencies": {
     "react": "^18.2.0",
