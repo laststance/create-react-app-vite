@@ -34,7 +34,7 @@ npm run validate
 npm start
 ```
 
-If you don't need TailwindCSS, run npm run remove:tailwind after npm install.
+If you don't need TailwindCSS, run `npm run remove:tailwind` after npm installed.
 
 ### Commands
 
