@@ -56,7 +56,7 @@ const App: React.FC = () => {
           >
             Vite Docs
           </a>
-          {docsList.length
+          {docsList.length > 0
             ? docsList.map((v, i) => {
                 return (
                   <span key={i}>
