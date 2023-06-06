@@ -53,6 +53,10 @@ npm run serve           # launch server for production bundle in local
 npm run remove:tailwind # remove TailwindCSS
 ```
 
+# CRA to Vite migration guide
+- [Migrate to Vite from Create React App (CRA)](https://www.robinwieruch.de/vite-create-react-app/)
+
+
 # Background
 
 The evolution of the React framework is accelerating more than ever before.  
