@@ -59,16 +59,16 @@ npm run remove:tailwind # remove TailwindCSS
 
 # Background
 
-The evolution of the React framework is accelerating more than ever before.  
-[Next.js](https://nextjs.org/), [Remix](https://remix.run/), [RedwoodJS](https://redwoodjs.com/), [Gatsby](https://www.gatsbyjs.com/), [Blitz](https://blitzjs.com/) etc...
+Simply put, CRA development has stopped as of 2023.
+This has sparked a discussion about replacing CRA with Vite for official documentation recommendations.
+[Replace Create React App recommendation with Vite](https://github.com/reactjs/react.dev/pull/5487)
+Dan Avramov offered some plans for the future of the CRA in his comments, but no direct answers were given.
+https://github.com/reactjs/react.dev/pull/5487#issuecomment-1409720741
 
-Ahthough I still need plain React programming starter some reason. (.e.g Demo, Experiment like Deep Dive React Core.)  
-So far, [create-react-app](https://github.com/facebook/create-react-app) **was** it.  
-In short, [create-react-app](https://github.com/facebook/create-react-app) development couldn't say active. Please read the [Issue](https://github.com/facebook/create-react-app/issues/11180) in details.
+ The React community is still buzzing around Server Component after May 2023, but there is still a high demand for the React SinglePageAplication starter that the CRA has served in the past, and I was one of the people who needed it, I was one of the people who needed it, so I decided to create a template in Vite that could be used as much as possible like CRA.
 
-So I created an alternative to [create-react-app](https://github.com/facebook/create-react-app) for myself, based on [Vite](https://github.com/facebook/create-react-app).  
-This project contains my very opinionted setup,  
-but I hope it will be a useful tool for people who have similar needs to mine! 😀
+
+
 
 # License
 
