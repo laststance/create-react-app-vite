@@ -10,15 +10,11 @@ const rootDir = path.join(__dirname, '..')
 
 function removeTailwind() {
   try {
-    fs.unlinkSync(rootDir + '/postcss.config.js')
-    console.log('remove postcss.config.js')
     fs.unlinkSync(rootDir + '/tailwind.config.js')
-    console.log('remove tailwind.config.js')
+    console.log('remove tailwind.config.js\n')
   } catch (e) {
     if (e.message.includes('no such file or directory'))
-      console.log(
-        'postcss.config.js/tailwind.config.js has already been removed.'
-      )
+      console.log('tailwind.config.js has already been removed.\n')
   }
 
   // npm unlinstall
@@ -41,7 +37,7 @@ function removeTailwind() {
     }
   }
 
-  if (tailwindPackages.length === 1) {
+  if (tailwindPackages.length === 0) {
     console.log('TailwindCSS has already been removed.\n')
     exit()
   }
@@ -58,9 +54,9 @@ function removeTailwind() {
     console.error('Command Failed: ' + uninstallCommand)
 
   console.log(tailwindPackages.join('\n'))
-  console.log('Above packages uninstall has been successful.')
+  console.log('Above packages uninstall has been successful.\n')
   console.log()
-  console.log('Completed remove TailwindCSS.')
+  console.log('Completed remove TailwindCSS.\n')
 }
 
 // run
