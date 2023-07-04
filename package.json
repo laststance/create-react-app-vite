@@ -42,7 +42,7 @@
     "all-contributors-cli": "^6.26.0",
     "autoprefixer": "^10.4.14",
     "concurrently": "^8.2.0",
-    "cross-fetch": "^3.1.8",
+    "cross-fetch": "^4.0.0",
     "eslint": "^8.44.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-import-resolver-typescript": "^3.5.3",
