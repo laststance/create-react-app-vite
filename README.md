@@ -17,7 +17,7 @@ I'd like to keep CRA like experience as much as possible, So improving/adding fe
 - [tailwindcss](https://tailwindcss.com/)
 - [Github Actions](https://github.com/features/actions)
 
-All npm package are keeping least release version powered by [Depfu](https://depfu.com/).
+All npm package are keeping least release version powered by [Renovate](https://docs.renovatebot.com/modules/manager/npm/).
 
 # Installation
 
