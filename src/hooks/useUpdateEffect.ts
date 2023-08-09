@@ -5,7 +5,7 @@ import { useRef, useEffect } from 'react'
  */
 const useUpdateEffect = (
   effect: AnyFunction,
-  deps: any[] | undefined = undefined
+  deps: any[] | undefined = undefined,
 ): void => {
   const mounted = useRef<boolean>()
   useEffect(() => {
