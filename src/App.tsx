@@ -14,7 +14,7 @@ const App: React.FC = () => {
 
   useEffect(() => {
     fetch('http://localhost:3000/api/docs_list')
-      .then((res) => res.json())
+      .then(async (res) => res.json())
       .then((data) => {
         setDocsList(data)
       })

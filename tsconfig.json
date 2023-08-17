@@ -17,5 +17,6 @@
     "jsx": "react-jsx",
     "types": ["vitest/globals", "testing-library__jest-dom"]
   },
-  "include": ["./src", "./@types"]
+  "include": ["./src", "./@types","mocks", "scripts", "*.js", "*ts"],
+  "exclude": ["dist"]
 }
