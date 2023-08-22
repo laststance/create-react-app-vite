@@ -43,7 +43,7 @@
     "@vitest/ui": "^0.34.2",
     "all-contributors-cli": "^6.26.1",
     "autoprefixer": "^10.4.14",
-    "concurrently": "^8.2.0",
+    "concurrently": "^8.2.1",
     "cross-fetch": "^4.0.0",
     "eslint": "^8.46.0",
     "eslint-config-prettier": "^9.0.0",
