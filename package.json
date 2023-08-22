@@ -11,7 +11,7 @@
     "build": "vite build",
     "serve": "serve dist",
     "test": "vitest --run",
-    "test:ui": "",
+    "test:ui": "vitest --ui",
     "test:watch": "vitest",
     "lint": "eslint . --ext .ts,.tsx,.js,jsx",
     "lint:fix": "eslint . --ext .ts,.tsx,.js,jsx --fix",
