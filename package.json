@@ -38,7 +38,7 @@
     "@types/react-dom": "^18.2.7",
     "@types/testing-library__jest-dom": "^6.0.0",
     "@typescript-eslint/eslint-plugin": "^6.4.1",
-    "@typescript-eslint/parser": "^6.3.0",
+    "@typescript-eslint/parser": "^6.4.1",
     "@vitejs/plugin-react-swc": "^3.3.2",
     "@vitest/ui": "^0.34.2",
     "all-contributors-cli": "^6.26.1",
