@@ -14,5 +14,5 @@ jobs:
       - uses: actions/setup-node@v2-beta
         with:
           node-version: '18.16.0'
-      - run: npm install
-      - run: npm test
+      - run: pnpm install
+      - run: pnpm test

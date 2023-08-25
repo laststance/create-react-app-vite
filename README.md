@@ -29,28 +29,28 @@ npx degit laststance/create-react-app-vite myapp
 
 ```sh
 cd myapp
-npm install
-npm run validate
-npm start
+pnpm install
+pnpm validate
+pnpm start
 ```
 
-If you don't need TailwindCSS, run `npm run remove:tailwind` after npm installed.
+If you don't need TailwindCSS, run `pnpm remove:tailwind` after npm installed.
 
 ### Commands
 
 ```sh
-npm run dev             # start development server
-npm run start           # start development server
-npm run validate        # run test,lint,build,typecheck concurrently
-npm run test            # run jest
-npm run lint            # run eslint
-npm run lint:fix        # run eslint with --fix option
-npm run typecheck       # run TypeScript compiler check
-npm run build           # build production bundle to 'dist' directly
-npm run prettier        # run prettier for json|yml|css|md|mdx files
-npm run clean           # remove 'node_modules' 'yarn.lock' 'dist' completely
-npm run serve           # launch server for production bundle in local
-npm run remove:tailwind # remove TailwindCSS
+pnpm dev             # start development server
+pnpm start           # start development server
+pnpm validate        # run test,lint,build,typecheck concurrently
+pnpm test            # run jest
+pnpm lint            # run eslint
+pnpm lint:fix        # run eslint with --fix option
+pnpm typecheck       # run TypeScript compiler check
+pnpm build           # build production bundle to 'dist' directly
+pnpm prettier        # run prettier for json|yml|css|md|mdx files
+pnpm clean           # remove 'node_modules' 'yarn.lock' 'dist' completely
+pnpm serve           # launch server for production bundle in local
+pnpm remove:tailwind # remove TailwindCSS
 ```
 
 # CRA to Vite migration guides
