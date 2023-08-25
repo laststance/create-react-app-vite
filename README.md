@@ -12,7 +12,7 @@ This is a Vite template top of the official [Vite](https://vitejs.dev/) [react-t
 I'd like to keep CRA like experience as much as possible, So improving/adding feature Rull Request is really welcome!
 
 - Support CRA's [Custom Environment Variables](https://create-react-app.dev/docs/adding-custom-environment-variables/) like `REACT_APP_`.
-- [eslint-typescript](https://github.com/typescript-eslint/typescript-eslint) and [Prettier](https://prettier.io/) integration. Rules are 100% my personal setup 💅
+- [eslint-config-ts-prefixer](https://github.com/laststance/eslint-config-ts-prefixer). Specialized fixable(`--fix` option) rule sets. Zero extend any recommended for confortable DX.
 - [Vitest](https://vitest.dev/), [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/), [MSW](https://mswjs.io/)
 - [tailwindcss](https://tailwindcss.com/)
 - [Github Actions](https://github.com/features/actions)
@@ -54,9 +54,9 @@ npm run remove:tailwind # remove TailwindCSS
 ```
 
 # CRA to Vite migration guides
+
 - [Migrate to Vite from Create React App (CRA)](https://www.robinwieruch.de/vite-create-react-app/)
 - [Migrating from Create React App (CRA) to Vite](https://cathalmacdonnacha.com/migrating-from-create-react-app-cra-to-vite)
-
 
 # Background
 
@@ -66,10 +66,7 @@ This has sparked a discussion about replacing CRA with Vite for official documen
 Dan Avramov offered some plans for the future of the CRA in his comments, but no direct answers were given.
 https://github.com/reactjs/react.dev/pull/5487#issuecomment-1409720741
 
- The React community is still buzzing around Server Component after May 2023, but there is still a high demand for the React SinglePageAplication starter that the CRA has served in the past, and I was one of the people who needed it, I was one of the people who needed it, so I decided to create a template in Vite that could be used as much as possible like CRA.
-
-
-
+The React community is still buzzing around Server Component after May 2023, but there is still a high demand for the React SinglePageAplication starter that the CRA has served in the past, and I was one of the people who needed it, I was one of the people who needed it, so I decided to create a template in Vite that could be used as much as possible like CRA.
 
 # License
 

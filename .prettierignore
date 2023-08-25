@@ -6,3 +6,6 @@ LICENSE
 build
 dist
 dist-ssr
+.all-contributorsrc
+.vscode
+.idea
