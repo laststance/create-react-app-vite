@@ -4,5 +4,6 @@ on: pull_request_review
 jobs:
   dependabot:
     if: github.actor == 'dependabot[bot]' && review.state == 'approved'
-    steps:
+    runs-on:
+     steps:
       - run: gh pr merge --auto
