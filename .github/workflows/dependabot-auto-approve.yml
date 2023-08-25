@@ -7,8 +7,7 @@ on:
 jobs:
   dependabot:
     if: github.actor == 'dependabot[bot]'
-    runs-on:
-      steps:
-        - uses: dependabot/fetch-metadata@v1.1.1
-        - if: steps.dependabot-metadata.outputs.update-type == 'version-update:semver-patch' || steps.dependabot-metadata.outputs.update-type == 'version-update:semver-minor || steps.dependabot-metadata.outputs.update-type == 'version-update:semver-patch' || steps.dependabot-metadata.outputs.update-type == 'version-update:semver-major'
-          run: gh pr review --approve
+    steps:
+      - uses: dependabot/fetch-metadata@v1.1.1
+      - if: steps.dependabot-metadata.outputs.update-type == 'version-update:semver-patch' || steps.dependabot-metadata.outputs.update-type == 'version-update:semver-minor || steps.dependabot-metadata.outputs.update-type == 'version-update:semver-patch' || steps.dependabot-metadata.outputs.update-type == 'version-update:semver-major'
+        run: gh pr review --approve
