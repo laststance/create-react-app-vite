@@ -56,8 +56,8 @@ devDependencies:
     specifier: ^3.3.2
     version: 3.3.2(vite@4.4.7)
   '@vitest/ui':
-    specifier: ^0.34.2
-    version: 0.34.2(vitest@0.34.3)
+    specifier: ^0.34.3
+    version: 0.34.3(vitest@0.34.3)
   all-contributors-cli:
     specifier: ^6.26.1
     version: 6.26.1
@@ -135,7 +135,7 @@ devDependencies:
     version: 3.2.0(vite@4.4.7)
   vitest:
     specifier: ^0.34.3
-    version: 0.34.3(@vitest/ui@0.34.2)(jsdom@22.1.0)
+    version: 0.34.3(@vitest/ui@0.34.3)(jsdom@22.1.0)
 
 packages:
 
@@ -1192,7 +1192,7 @@ packages:
       dom-accessibility-api: 0.5.16
       lodash: 4.17.21
       redent: 3.0.0
-      vitest: 0.34.3(@vitest/ui@0.34.2)(jsdom@22.1.0)
+      vitest: 0.34.3(@vitest/ui@0.34.3)(jsdom@22.1.0)
     dev: true
 
   /@testing-library/react@14.0.0(react-dom@18.2.0)(react@18.2.0):
@@ -1492,27 +1492,19 @@ packages:
       tinyspy: 2.1.1
     dev: true
 
-  /@vitest/ui@0.34.2(vitest@0.34.3):
-    resolution: {integrity: sha512-UXylkcts4Ete3dQ1niwG6Xpp4lNxiSI1ZzjpcJ0+aWz57yNSzuS8+UMTFbYTClBet9XUqzSK9VvGe+ntCHGQbg==}
+  /@vitest/ui@0.34.3(vitest@0.34.3):
+    resolution: {integrity: sha512-iNcOQ0xML9znOReiwpKJrTLSj5zFxmveD3VCxIJNqnsaMYpONSbSiiJLC1Y1dYlkmiHylp+ElNcUZYIMWdxRvA==}
     peerDependencies:
       vitest: '>=0.30.1 <1'
     dependencies:
-      '@vitest/utils': 0.34.2
+      '@vitest/utils': 0.34.3
       fast-glob: 3.3.1
       fflate: 0.8.0
       flatted: 3.2.7
       pathe: 1.1.1
       picocolors: 1.0.0
       sirv: 2.0.3
-      vitest: 0.34.3(@vitest/ui@0.34.2)(jsdom@22.1.0)
-    dev: true
-
-  /@vitest/utils@0.34.2:
-    resolution: {integrity: sha512-Lzw+kAsTPubhoQDp1uVAOP6DhNia1GMDsI9jgB0yMn+/nDaPieYQ88lKqz/gGjSHL4zwOItvpehec9OY+rS73w==}
-    dependencies:
-      diff-sequences: 29.6.3
-      loupe: 2.3.6
-      pretty-format: 29.6.3
+      vitest: 0.34.3(@vitest/ui@0.34.3)(jsdom@22.1.0)
     dev: true
 
   /@vitest/utils@0.34.3:
@@ -5577,7 +5569,7 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /vitest@0.34.3(@vitest/ui@0.34.2)(jsdom@22.1.0):
+  /vitest@0.34.3(@vitest/ui@0.34.3)(jsdom@22.1.0):
     resolution: {integrity: sha512-7+VA5Iw4S3USYk+qwPxHl8plCMhA5rtfwMjgoQXMT7rO5ldWcdsdo3U1QD289JgglGK4WeOzgoLTsGFu6VISyQ==}
     engines: {node: '>=v14.18.0'}
     hasBin: true
@@ -5615,7 +5607,7 @@ packages:
       '@vitest/runner': 0.34.3
       '@vitest/snapshot': 0.34.3
       '@vitest/spy': 0.34.3
-      '@vitest/ui': 0.34.2(vitest@0.34.3)
+      '@vitest/ui': 0.34.3(vitest@0.34.3)
       '@vitest/utils': 0.34.3
       acorn: 8.10.0
       acorn-walk: 8.2.0
