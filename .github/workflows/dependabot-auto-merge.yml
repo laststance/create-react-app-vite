@@ -10,34 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.actor == 'dependabot[bot]' }}
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
       - name: Dependabot metadata
         id: metadata
         uses: dependabot/fetch-metadata@v1
         with:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
-
-      - name: Check if PR is approved
-        id: check_approval
-        run: |
-          # Get the PR number
-          pr_number=${{ github.event.pull_request.number }}
-          
-          # Fetch the approval status of the PR
-          pr_status=$(gh pr view $pr_number --json reviews -R ${{ github.repository }} | jq -r '.reviews[] | select(.state == "APPROVED") | .state')
-          
-          if [ "$pr_status" == "APPROVED" ]; then
-            echo "APPROVED=true" >> $GITHUB_ENV
-          else
-            echo "The PR is not approved."
-          fi
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Enable auto-merge for Dependabot PRs
-        if: env.APPROVED == 'true'
-        run: gh pr merge --auto --merge
+        if: ${{contains(steps.metadata.outputs.dependency-names, 'my-dependency') && steps.metadata.outputs.update-type == 'version-update:semver-patch'}}
+        run: gh pr merge --auto --merge "$PR_URL"
         env:
+          PR_URL: ${{github.event.pull_request.html_url}}
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}

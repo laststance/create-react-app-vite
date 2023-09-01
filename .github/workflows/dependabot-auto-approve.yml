@@ -5,40 +5,17 @@ permissions:
   pull-requests: write
 
 jobs:
-
   dependabot:
     runs-on: ubuntu-latest
     if: ${{ github.actor == 'dependabot[bot]' }}
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Check all CI jobs
-        id: check
-        run: |
-          # Get the PR number
-          pr_number=${{ github.event.pull_request.number }}
-          
-          # Fetch the status of relevant pull requests
-          pr_status=$(gh pr status --json checksStatus -R ${{ github.repository }} | jq -r ".[] | select(.number == $pr_number) | .checksStatus")
-          
-          if [ "$pr_status" == "PASS" ]; then
-            echo "ALL_CHECKS_PASSED=true" >> $GITHUB_ENV
-          else
-            echo "Not all checks have passed."
-          fi
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Dependabot metadata
-        if: env.ALL_CHECKS_PASSED == 'true'
         id: metadata
         uses: dependabot/fetch-metadata@v1
         with:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
-
       - name: Approve a PR
-        if: env.ALL_CHECKS_PASSED == 'true'
-        run: gh pr review --approve
+        run: gh pr review --approve "$PR_URL"
         env:
+          PR_URL: ${{github.event.pull_request.html_url}}
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
