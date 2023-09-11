@@ -40,7 +40,7 @@
     "@typescript-eslint/eslint-plugin": "^6.6.0",
     "@typescript-eslint/parser": "^6.6.0",
     "@vitejs/plugin-react-swc": "^3.3.2",
-    "@vitest/ui": "^0.34.3",
+    "@vitest/ui": "^0.34.4",
     "all-contributors-cli": "^6.26.1",
     "autoprefixer": "^10.4.15",
     "concurrently": "^8.2.1",
