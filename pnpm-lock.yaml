@@ -77,8 +77,8 @@ devDependencies:
     specifier: ^9.0.0
     version: 9.0.0(eslint@8.49.0)
   eslint-config-ts-prefixer:
-    specifier: ^1.6.0
-    version: 1.6.0
+    specifier: ^1.8.0
+    version: 1.8.0
   eslint-import-resolver-typescript:
     specifier: ^3.6.0
     version: 3.6.0(@typescript-eslint/parser@6.7.0)(eslint-plugin-import@2.28.1)(eslint@8.49.0)
@@ -1318,7 +1318,7 @@ packages:
   /@types/set-cookie-parser@2.4.3:
     resolution: {integrity: sha512-7QhnH7bi+6KAhBB+Auejz1uV9DHiopZqu7LfR/5gZZTkejJV5nYeZZpgfFoE0N8aDsXuiYpfKyfyMatCwQhyTQ==}
     dependencies:
-      '@types/node': 20.5.6
+      '@types/node': 20.6.1
     dev: true
 
   /@types/wrap-ansi@3.0.0:
@@ -2612,8 +2612,8 @@ packages:
       eslint: 8.49.0
     dev: true
 
-  /eslint-config-ts-prefixer@1.6.0:
-    resolution: {integrity: sha512-rQHpoV2YN5q38uj2mc1B7H3I2Yy1fxTGTuf5XLQmkK3V8nFWRLOR7WeZQgps+LnLtLBT1ppqKRLMlwzYyMFaDg==}
+  /eslint-config-ts-prefixer@1.8.0:
+    resolution: {integrity: sha512-hMfHbhbjuOm/k64pZTMEgfnhCsYdRlGM1GDaXpKl+xH3nApuQPcUFJ9sHdZTWTYTj+OFNJBXKarhq0LIz7T61g==}
     hasBin: true
     dependencies:
       '@inquirer/prompts': 3.1.1
