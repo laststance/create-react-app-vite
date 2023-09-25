@@ -39,7 +39,7 @@
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.7.2",
     "@typescript-eslint/parser": "^6.7.2",
-    "@vitejs/plugin-react-swc": "^3.3.2",
+    "@vitejs/plugin-react-swc": "^3.4.0",
     "@vitest/ui": "^0.34.5",
     "all-contributors-cli": "^6.26.1",
     "autoprefixer": "^10.4.16",
