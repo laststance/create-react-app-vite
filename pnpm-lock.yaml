@@ -131,8 +131,8 @@ devDependencies:
     specifier: ^1.1.3
     version: 1.1.3(vite@4.4.9)
   vite-plugin-svgr:
-    specifier: ^4.0.0
-    version: 4.0.0(typescript@5.2.2)(vite@4.4.9)
+    specifier: ^4.1.0
+    version: 4.1.0(typescript@5.2.2)(vite@4.4.9)
   vitest:
     specifier: ^0.34.5
     version: 0.34.5(@vitest/ui@0.34.6)(jsdom@22.1.0)
@@ -5568,8 +5568,8 @@ packages:
       vite: 4.4.9(@types/node@20.7.0)
     dev: true
 
-  /vite-plugin-svgr@4.0.0(typescript@5.2.2)(vite@4.4.9):
-    resolution: {integrity: sha512-ingW8FEJ4vz9mQumnMDhNysE+YleiaThYmgflhUIVI4iIjVsVA1SswYIKprWVmyFsiIk1DqcwUeTFCnUJA3Vvg==}
+  /vite-plugin-svgr@4.1.0(typescript@5.2.2)(vite@4.4.9):
+    resolution: {integrity: sha512-v7Qic+FWmCChgQNGSI4V8X63OEYsdUoLt66iqIcHozq9bfK/Dwmr0V+LBy1NE8CE98Y8HouEBJ+pto4AMfN5xw==}
     peerDependencies:
       vite: ^2.6.0 || 3 || 4
     dependencies:
