@@ -94,9 +94,6 @@ devDependencies:
   eslint-plugin-react-hooks:
     specifier: ^4.6.0
     version: 4.6.0(eslint@8.52.0)
-  eslint-plugin-sort-keys-custom-order:
-    specifier: ^1.0.5
-    version: 1.0.5(eslint@8.52.0)
   jsdom:
     specifier: ^22.1.0
     version: 22.1.0
@@ -2811,15 +2808,6 @@ packages:
     engines: {node: '>=10'}
     peerDependencies:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0
-    dependencies:
-      eslint: 8.52.0
-    dev: true
-
-  /eslint-plugin-sort-keys-custom-order@1.0.5(eslint@8.52.0):
-    resolution: {integrity: sha512-WdZjCY/nyOjr4GnMvQTiH225sQ0+LvmoZBB7cPkSvhbx7FxKCk3pwn8UTKquSdSRsvPiM2qoUvIOPDAEdOJdkA==}
-    engines: {node: '>=0.10.0'}
-    peerDependencies:
-      eslint: ^8.28.0
     dependencies:
       eslint: 8.52.0
     dev: true

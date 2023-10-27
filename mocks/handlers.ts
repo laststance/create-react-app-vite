@@ -1,12 +1,12 @@
-import { rest } from 'msw'
+import { http, HttpResponse } from 'msw'
 
 export const handlers = [
-  rest.get('http://localhost:3000/api/docs_list', async (req, res, ctx) => {
+  http.get('http://localhost:3000/api/docs_list', async () => {
     const data = [
       { name: 'MSW', url: 'https://mswjs.io/' },
       { name: 'Tailwind CSS', url: 'https://tailwindcss.com/' },
     ]
 
-    return res(ctx.status(200), ctx.json(data))
+    return HttpResponse.json(data)
   }),
 ]
