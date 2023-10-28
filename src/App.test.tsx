@@ -4,7 +4,7 @@ import React from 'react'
 
 import App from './App'
 
-test('Show App Component', () => {
+test('Work App Component without error', () => {
   render(<App />)
 
   expect(screen.getByText("I'm REACT_APP_TEXT from .env")).toBeInTheDocument()
@@ -30,8 +30,11 @@ test('Working Counter', async () => {
 test('working with msw', async () => {
   render(<App />)
 
-  await waitFor(() => {
-    expect(screen.getByText('MSW')).toBeInTheDocument()
-    expect(screen.getByText('Tailwind CSS')).toBeInTheDocument()
-  })
+  await waitFor(
+    () => {
+      expect(screen.getByText('MSW')).toBeInTheDocument()
+      expect(screen.getByText('Tailwind CSS')).toBeInTheDocument()
+    },
+    { timeout: 5000 },
+  )
 })

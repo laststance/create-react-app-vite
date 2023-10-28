@@ -27,3 +27,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.react-logo {
+  margin: auto;
+  height: 30vmin;
+  pointer-events: none;
+  animation: react-logo-spin infinite 20s linear;
+}
+
+@keyframes react-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

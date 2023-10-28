@@ -1,0 +1,33 @@
+.documentList {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.button {
+  flex: 1 0 calc(33.3333% - 10px);
+  color: white;
+  margin-top: 10px;
+  font-size: 24px;
+  padding: 14px 20px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.5s;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.link {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 32px;
+  color: #61dafb;
+}
