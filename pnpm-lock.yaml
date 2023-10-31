@@ -9,14 +9,14 @@ dependencies:
     specifier: ^2.0.0
     version: 2.0.0
   react:
-    specifier: 0.0.0-experimental-8039e6d0b-20231026
-    version: 0.0.0-experimental-8039e6d0b-20231026
+    specifier: 18.2.0
+    version: 18.2.0
   react-dom:
     specifier: 0.14.1
     version: 0.14.1
   react-router-dom:
     specifier: ^6.17.0
-    version: 6.17.0(react-dom@0.14.1)(react@0.0.0-experimental-8039e6d0b-20231026)
+    version: 6.17.0(react-dom@0.14.1)(react@18.2.0)
 
 devDependencies:
   '@tailwindcss/aspect-ratio':
@@ -39,7 +39,7 @@ devDependencies:
     version: 6.1.4(vitest@0.34.6)
   '@testing-library/react':
     specifier: ^14.0.0
-    version: 14.0.0(react-dom@0.14.1)(react@0.0.0-experimental-8039e6d0b-20231026)
+    version: 14.0.0(react-dom@0.14.1)(react@18.2.0)
   '@testing-library/user-event':
     specifier: ^14.5.1
     version: 14.5.1(@testing-library/dom@9.3.3)
@@ -1242,7 +1242,7 @@ packages:
       vitest: 0.34.6(@vitest/ui@0.34.6)(jsdom@22.1.0)
     dev: true
 
-  /@testing-library/react@14.0.0(react-dom@0.14.1)(react@0.0.0-experimental-8039e6d0b-20231026):
+  /@testing-library/react@14.0.0(react-dom@0.14.1)(react@18.2.0):
     resolution: {integrity: sha512-S04gSNJbYE30TlIMLTzv6QCTzt9AqIF5y6s6SzVFILNcNvbV/jU96GeiTPillGQo+Ny64M/5PV7klNYYgv5Dfg==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -1252,7 +1252,7 @@ packages:
       '@babel/runtime': 7.23.1
       '@testing-library/dom': 9.3.3
       '@types/react-dom': 18.2.14
-      react: 0.0.0-experimental-8039e6d0b-20231026
+      react: 18.2.0
       react-dom: 0.14.1
     dev: true
 
@@ -4857,7 +4857,7 @@ packages:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
     dev: true
 
-  /react-router-dom@6.17.0(react-dom@0.14.1)(react@0.0.0-experimental-8039e6d0b-20231026):
+  /react-router-dom@6.17.0(react-dom@0.14.1)(react@18.2.0):
     resolution: {integrity: sha512-qWHkkbXQX+6li0COUUPKAUkxjNNqPJuiBd27dVwQGDNsuFBdMbrS6UZ0CLYc4CsbdLYTckn4oB4tGDuPZpPhaQ==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
@@ -4865,26 +4865,20 @@ packages:
       react-dom: '>=16.8'
     dependencies:
       '@remix-run/router': 1.10.0
-      react: 0.0.0-experimental-8039e6d0b-20231026
+      react: 18.2.0
       react-dom: 0.14.1
-      react-router: 6.17.0(react@0.0.0-experimental-8039e6d0b-20231026)
+      react-router: 6.17.0(react@18.2.0)
     dev: false
 
-  /react-router@6.17.0(react@0.0.0-experimental-8039e6d0b-20231026):
+  /react-router@6.17.0(react@18.2.0):
     resolution: {integrity: sha512-YJR3OTJzi3zhqeJYADHANCGPUu9J+6fT5GLv82UWRGSxu6oJYCKVmxUcaBQuGm9udpWmPsvpme/CdHumqgsoaA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       react: '>=16.8'
     dependencies:
       '@remix-run/router': 1.10.0
-      react: 0.0.0-experimental-8039e6d0b-20231026
+      react: 18.2.0
     dev: false
-
-  /react@0.0.0-experimental-8039e6d0b-20231026:
-    resolution: {integrity: sha512-9Rj/+2ggmZVbjTSZGNniMwA25gVCDb4xwVhdYaOyo6P94jE75sJZaWHJK2LFakBwcIC08per/dzWIni+oGB38w==}
-    engines: {node: '>=0.10.0'}
-    dependencies:
-      loose-envify: 1.4.0
 
   /react@0.14.10:
     resolution: {integrity: sha512-yxMw5aorZG4qsLVBfjae4wGFvd5708DhcxaXLJ3IOTgr1TCs8k9+ZheGgLGr5OfwWMhSahNbGvvoEDzrxVWouA==}
@@ -4892,6 +4886,12 @@ packages:
     dependencies:
       envify: 3.4.1
       fbjs: 0.6.1
+
+  /react@18.2.0:
+    resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      loose-envify: 1.4.0
 
   /read-cache@1.0.0:
     resolution: {integrity: sha512-Owdv/Ft7IjOgm/i0xvNDZ1LrRANRfew4b2prF3OWMQLxLfu3bS8FVhCsrSCMK4lR56Y9ya+AThoTpDCTxCmpRA==}
