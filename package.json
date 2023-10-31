@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "clsx": "^2.0.0",
-    "react": "0.0.0-experimental-8039e6d0b-20231026",
+    "react": "18.2.0",
     "react-dom": "0.14.1",
     "react-router-dom": "^6.17.0"
   },
