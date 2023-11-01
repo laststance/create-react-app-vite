@@ -23,8 +23,8 @@
   },
   "dependencies": {
     "clsx": "^2.0.0",
-    "react": "18.2.0",
-    "react-dom": "0.14.1",
+    "react": "18.3.0-canary-08a39539f-20231031",
+    "react-dom": "18.3.0-canary-08a39539f-20231031",
     "react-router-dom": "^6.17.0"
   },
   "devDependencies": {
