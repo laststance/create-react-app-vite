@@ -5,6 +5,9 @@
   "msw": {
     "workerDirectory": "public"
   },
+  "lint-staged": {
+    "*": "prettier --ignore-unknown --write"
+  },
   "scripts": {
     "start": "vite",
     "dev": "vite",
@@ -16,10 +19,11 @@
     "lint": "eslint . --ext .ts,.tsx,.js,jsx,cjs,mjs",
     "lint:fix": "eslint . --ext .ts,.tsx,.js,jsx,cjs,mjs --fix",
     "typecheck": "tsc --noEmit",
-    "prettier": "prettier --write --ignore-unknown .",
+    "prettier": "prettier --ignore-unknown --write .",
     "clean": "rimraf node_modules package-lock.json dist",
     "validate": "./scripts/validate",
-    "remove:tailwind": "scripts/remove_tailwind.js"
+    "remove:tailwind": "scripts/remove_tailwind.js",
+    "prepare": "husky install"
   },
   "dependencies": {
     "clsx": "^2.0.0",
@@ -55,7 +59,9 @@
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.0",
     "jsdom": "^22.1.0",
+    "lint-staged": "^15.0.2",
     "msw": "^2.0.2",
     "postcss": "^8.4.31",
     "postcss-import": "^15.1.0",
