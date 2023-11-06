@@ -51,7 +51,7 @@
     "autoprefixer": "^10.4.16",
     "concurrently": "^8.2.2",
     "cross-fetch": "^4.0.0",
-    "eslint": "^8.52.0",
+    "eslint": "^8.53.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-config-ts-prefixer": "^1.12.5",
     "eslint-import-resolver-typescript": "^3.6.1",
