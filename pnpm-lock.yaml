@@ -110,8 +110,8 @@ devDependencies:
     specifier: ^15.1.0
     version: 15.1.0
   msw:
-    specifier: ^2.0.7
-    version: 2.0.7(typescript@5.2.2)
+    specifier: ^2.0.8
+    version: 2.0.8(typescript@5.2.2)
   postcss:
     specifier: ^8.4.31
     version: 8.4.31
@@ -4266,8 +4266,8 @@ packages:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
     dev: true
 
-  /msw@2.0.7(typescript@5.2.2):
-    resolution: {integrity: sha512-P8mT/O1C0N18t1ZbK+ubYOGF8TFwHrmZktAXmlTR2b0+UXQiFEiuymXoUyfVmx8qGKSlrIL3HllnwT04+Brt3g==}
+  /msw@2.0.8(typescript@5.2.2):
+    resolution: {integrity: sha512-/5nQCotVka62lvubQ3tMfUS3TukyeBwvWyvAthcXvDlXGhkA/85HlEwZyFlJ3ZsPW45Ty+ao0S4oFvuM12R/kA==}
     engines: {node: '>=18'}
     hasBin: true
     requiresBuild: true
@@ -4293,15 +4293,12 @@ packages:
       inquirer: 8.2.6
       is-node-process: 1.2.0
       js-levenshtein: 1.1.6
-      node-fetch: 2.7.0
       outvariant: 1.4.0
       path-to-regexp: 6.2.1
       strict-event-emitter: 0.5.1
       type-fest: 2.19.0
       typescript: 5.2.2
       yargs: 17.7.2
-    transitivePeerDependencies:
-      - encoding
     dev: true
 
   /mute-stream@0.0.8:
