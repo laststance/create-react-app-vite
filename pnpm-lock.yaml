@@ -35,8 +35,8 @@ devDependencies:
     specifier: ^9.3.3
     version: 9.3.3
   '@testing-library/jest-dom':
-    specifier: ^6.1.4
-    version: 6.1.4(vitest@0.34.6)
+    specifier: ^6.1.5
+    version: 6.1.5(vitest@0.34.6)
   '@testing-library/react':
     specifier: ^14.1.2
     version: 14.1.2(react-dom@18.3.0-canary-08a39539f-20231031)(react@18.3.0-canary-08a39539f-20231031)
@@ -1226,8 +1226,8 @@ packages:
       pretty-format: 27.5.1
     dev: true
 
-  /@testing-library/jest-dom@6.1.4(vitest@0.34.6):
-    resolution: {integrity: sha512-wpoYrCYwSZ5/AxcrjLxJmCU6I5QAJXslEeSiMQqaWmP2Kzpd1LvF/qxmAIW2qposULGWq2gw30GgVNFLSc2Jnw==}
+  /@testing-library/jest-dom@6.1.5(vitest@0.34.6):
+    resolution: {integrity: sha512-3y04JLW+EceVPy2Em3VwNr95dOKqA8DhR0RJHhHKDZNYXcVXnEK7WIrpj4eYU8SVt/qYZ2aRWt/WgQ+grNES8g==}
     engines: {node: '>=14', npm: '>=6', yarn: '>=1'}
     peerDependencies:
       '@jest/globals': '>= 28'
@@ -1245,7 +1245,7 @@ packages:
         optional: true
     dependencies:
       '@adobe/css-tools': 4.3.1
-      '@babel/runtime': 7.23.1
+      '@babel/runtime': 7.23.2
       aria-query: 5.3.0
       chalk: 3.0.0
       css.escape: 1.5.1
