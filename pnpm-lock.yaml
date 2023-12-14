@@ -15,8 +15,8 @@ dependencies:
     specifier: 18.3.0-canary-08a39539f-20231031
     version: 18.3.0-canary-08a39539f-20231031(react@18.3.0-canary-08a39539f-20231031)
   react-router-dom:
-    specifier: ^6.20.1
-    version: 6.20.1(react-dom@18.3.0-canary-08a39539f-20231031)(react@18.3.0-canary-08a39539f-20231031)
+    specifier: ^6.21.0
+    version: 6.21.0(react-dom@18.3.0-canary-08a39539f-20231031)(react@18.3.0-canary-08a39539f-20231031)
 
 devDependencies:
   '@tailwindcss/aspect-ratio':
@@ -903,8 +903,8 @@ packages:
     resolution: {integrity: sha512-C16M+IYz0rgRhWZdCmK+h58JMv8vijAA61gmz2rspCSwKwzBebpdcsiUmwrtJRdphuY30i6BSLEOP8ppbNLyLg==}
     dev: true
 
-  /@remix-run/router@1.13.1:
-    resolution: {integrity: sha512-so+DHzZKsoOcoXrILB4rqDkMDy7NLMErRdOxvzvOKb507YINKUP4Di+shbTZDhSE/pBZ+vr7XGIpcOO0VLSA+Q==}
+  /@remix-run/router@1.14.0:
+    resolution: {integrity: sha512-WOHih+ClN7N8oHk9N4JUiMxQJmRVaOxcg8w7F/oHUXzJt920ekASLI/7cYX8XkntDWRhLZtsk6LbGrkgOAvi5A==}
     engines: {node: '>=14.0.0'}
     dev: false
 
@@ -4924,26 +4924,26 @@ packages:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
     dev: true
 
-  /react-router-dom@6.20.1(react-dom@18.3.0-canary-08a39539f-20231031)(react@18.3.0-canary-08a39539f-20231031):
-    resolution: {integrity: sha512-npzfPWcxfQN35psS7rJgi/EW0Gx6EsNjfdJSAk73U/HqMEJZ2k/8puxfwHFgDQhBGmS3+sjnGbMdMSV45axPQw==}
+  /react-router-dom@6.21.0(react-dom@18.3.0-canary-08a39539f-20231031)(react@18.3.0-canary-08a39539f-20231031):
+    resolution: {integrity: sha512-1dUdVj3cwc1npzJaf23gulB562ESNvxf7E4x8upNJycqyUm5BRRZ6dd3LrlzhtLaMrwOCO8R0zoiYxdaJx4LlQ==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       react: '>=16.8'
       react-dom: '>=16.8'
     dependencies:
-      '@remix-run/router': 1.13.1
+      '@remix-run/router': 1.14.0
       react: 18.3.0-canary-08a39539f-20231031
       react-dom: 18.3.0-canary-08a39539f-20231031(react@18.3.0-canary-08a39539f-20231031)
-      react-router: 6.20.1(react@18.3.0-canary-08a39539f-20231031)
+      react-router: 6.21.0(react@18.3.0-canary-08a39539f-20231031)
     dev: false
 
-  /react-router@6.20.1(react@18.3.0-canary-08a39539f-20231031):
-    resolution: {integrity: sha512-ccvLrB4QeT5DlaxSFFYi/KR8UMQ4fcD8zBcR71Zp1kaYTC5oJKYAp1cbavzGrogwxca+ubjkd7XjFZKBW8CxPA==}
+  /react-router@6.21.0(react@18.3.0-canary-08a39539f-20231031):
+    resolution: {integrity: sha512-hGZ0HXbwz3zw52pLZV3j3+ec+m/PQ9cTpBvqjFQmy2XVUWGn5MD+31oXHb6dVTxYzmAeaiUBYjkoNz66n3RGCg==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       react: '>=16.8'
     dependencies:
-      '@remix-run/router': 1.13.1
+      '@remix-run/router': 1.14.0
       react: 18.3.0-canary-08a39539f-20231031
     dev: false
 
