@@ -57,6 +57,7 @@ pnpm remove:tailwind # remove TailwindCSS
 
 - [Migrate to Vite from Create React App (CRA)](https://www.robinwieruch.de/vite-create-react-app/)
 - [Migrating from Create React App (CRA) to Vite](https://cathalmacdonnacha.com/migrating-from-create-react-app-cra-to-vite)
+- [Migrating a Create React App (CRA) application to Vite](https://www.darraghoriordan.com/2021/05/16/migrating-from-create-react-app-to-vite)
 
 # Background
 
