@@ -84,7 +84,7 @@ devDependencies:
     version: 9.1.0(eslint@8.56.0)
   eslint-config-ts-prefixer:
     specifier: ^1.12.6
-    version: 1.12.6(@typescript-eslint/eslint-plugin@6.18.1)(@typescript-eslint/parser@6.18.1)(eslint-import-resolver-typescript@3.6.1)(eslint-plugin-import@2.29.1)(eslint-plugin-prettier@5.1.3)(eslint@8.56.0)(prettier@3.1.1)(typescript@5.3.3)
+    version: 1.12.6(@typescript-eslint/eslint-plugin@6.18.1)(@typescript-eslint/parser@6.18.1)(eslint-import-resolver-typescript@3.6.1)(eslint-plugin-import@2.29.1)(eslint-plugin-prettier@5.1.3)(eslint@8.56.0)(prettier@3.2.2)(typescript@5.3.3)
   eslint-import-resolver-typescript:
     specifier: ^3.6.1
     version: 3.6.1(@typescript-eslint/parser@6.18.1)(eslint-plugin-import@2.29.1)(eslint@8.56.0)
@@ -96,7 +96,7 @@ devDependencies:
     version: 6.8.0(eslint@8.56.0)
   eslint-plugin-prettier:
     specifier: ^5.1.3
-    version: 5.1.3(@types/eslint@8.56.2)(eslint-config-prettier@9.1.0)(eslint@8.56.0)(prettier@3.1.1)
+    version: 5.1.3(@types/eslint@8.56.2)(eslint-config-prettier@9.1.0)(eslint@8.56.0)(prettier@3.2.2)
   eslint-plugin-react-hooks:
     specifier: ^4.6.0
     version: 4.6.0(eslint@8.56.0)
@@ -119,11 +119,11 @@ devDependencies:
     specifier: ^16.0.0
     version: 16.0.0(postcss@8.4.33)
   prettier:
-    specifier: ^3.1.1
-    version: 3.1.1
+    specifier: ^3.2.2
+    version: 3.2.2
   prettier-plugin-tailwindcss:
     specifier: ^0.5.11
-    version: 0.5.11(prettier@3.1.1)
+    version: 0.5.11(prettier@3.2.2)
   rimraf:
     specifier: ^5.0.5
     version: 5.0.5
@@ -2738,7 +2738,7 @@ packages:
       eslint: 8.56.0
     dev: true
 
-  /eslint-config-ts-prefixer@1.12.6(@typescript-eslint/eslint-plugin@6.18.1)(@typescript-eslint/parser@6.18.1)(eslint-import-resolver-typescript@3.6.1)(eslint-plugin-import@2.29.1)(eslint-plugin-prettier@5.1.3)(eslint@8.56.0)(prettier@3.1.1)(typescript@5.3.3):
+  /eslint-config-ts-prefixer@1.12.6(@typescript-eslint/eslint-plugin@6.18.1)(@typescript-eslint/parser@6.18.1)(eslint-import-resolver-typescript@3.6.1)(eslint-plugin-import@2.29.1)(eslint-plugin-prettier@5.1.3)(eslint@8.56.0)(prettier@3.2.2)(typescript@5.3.3):
     resolution: {integrity: sha512-g2xkwsRRUzAr1LlTcYI775rV+z2iQ1jeH45UEeCLU4YqgoOEU39QHA4mnbr27pQKQZoE02SmNXbTAFDezfjsew==}
     hasBin: true
     peerDependencies:
@@ -2758,9 +2758,9 @@ packages:
       eslint: 8.56.0
       eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@6.18.1)(eslint-plugin-import@2.29.1)(eslint@8.56.0)
       eslint-plugin-import: 2.29.1(@typescript-eslint/parser@6.18.1)(eslint-import-resolver-typescript@3.6.1)(eslint@8.56.0)
-      eslint-plugin-prettier: 5.1.3(@types/eslint@8.56.2)(eslint-config-prettier@9.1.0)(eslint@8.56.0)(prettier@3.1.1)
+      eslint-plugin-prettier: 5.1.3(@types/eslint@8.56.2)(eslint-config-prettier@9.1.0)(eslint@8.56.0)(prettier@3.2.2)
       inquirer: 9.2.11
-      prettier: 3.1.1
+      prettier: 3.2.2
       typescript: 5.3.3
     dev: true
 
@@ -2887,7 +2887,7 @@ packages:
       object.fromentries: 2.0.7
     dev: true
 
-  /eslint-plugin-prettier@5.1.3(@types/eslint@8.56.2)(eslint-config-prettier@9.1.0)(eslint@8.56.0)(prettier@3.1.1):
+  /eslint-plugin-prettier@5.1.3(@types/eslint@8.56.2)(eslint-config-prettier@9.1.0)(eslint@8.56.0)(prettier@3.2.2):
     resolution: {integrity: sha512-C9GCVAs4Eq7ZC/XFQHITLiHJxQngdtraXaM+LoUFoFp/lHNl2Zn8f3WQbe9HvTBBQ9YnKFB0/2Ajdqwo5D1EAw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -2904,7 +2904,7 @@ packages:
       '@types/eslint': 8.56.2
       eslint: 8.56.0
       eslint-config-prettier: 9.1.0(eslint@8.56.0)
-      prettier: 3.1.1
+      prettier: 3.2.2
       prettier-linter-helpers: 1.0.0
       synckit: 0.8.6
     dev: true
@@ -4826,7 +4826,7 @@ packages:
       fast-diff: 1.3.0
     dev: true
 
-  /prettier-plugin-tailwindcss@0.5.11(prettier@3.1.1):
+  /prettier-plugin-tailwindcss@0.5.11(prettier@3.2.2):
     resolution: {integrity: sha512-AvI/DNyMctyyxGOjyePgi/gqj5hJYClZ1avtQvLlqMT3uDZkRbi4HhGUpok3DRzv9z7Lti85Kdj3s3/1CeNI0w==}
     engines: {node: '>=14.21.3'}
     peerDependencies:
@@ -4875,7 +4875,7 @@ packages:
       prettier-plugin-twig-melody:
         optional: true
     dependencies:
-      prettier: 3.1.1
+      prettier: 3.2.2
     dev: true
 
   /prettier@2.8.8:
@@ -4886,8 +4886,8 @@ packages:
     dev: true
     optional: true
 
-  /prettier@3.1.1:
-    resolution: {integrity: sha512-22UbSzg8luF4UuZtzgiUOfcGM8s4tjBv6dJRT7j275NXsy2jb4aJa4NNveul5x4eqlF1wuhuR2RElK71RvmVaw==}
+  /prettier@3.2.2:
+    resolution: {integrity: sha512-HTByuKZzw7utPiDO523Tt2pLtEyK7OibUD9suEJQrPUCYQqrHr74GGX6VidMrovbf/I50mPqr8j/II6oBAuc5A==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
