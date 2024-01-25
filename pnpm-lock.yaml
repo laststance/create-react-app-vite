@@ -101,8 +101,8 @@ devDependencies:
     specifier: ^4.6.0
     version: 4.6.0(eslint@8.56.0)
   husky:
-    specifier: ^8.0.0
-    version: 8.0.3
+    specifier: ^9.0.2
+    version: 9.0.2
   jsdom:
     specifier: ^24.0.0
     version: 24.0.0
@@ -3468,9 +3468,9 @@ packages:
     engines: {node: '>=16.17.0'}
     dev: true
 
-  /husky@8.0.3:
-    resolution: {integrity: sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==}
-    engines: {node: '>=14'}
+  /husky@9.0.2:
+    resolution: {integrity: sha512-0yR5R3OPjl8bYApi6T4QMOAwhtLhBjdYIVg5S6zSzIO8DIvQMh/b7Q8jW3WLbHLHtzpwiyMLBNB4R0Eb6x5+AA==}
+    engines: {node: '>=18'}
     hasBin: true
     dev: true
 
