@@ -1,19 +1,13 @@
-import React, { memo, Suspense } from 'react'
+import React, { memo } from 'react'
+import { RouterProvider } from 'react-router-dom'
 
 import ErrorBoundary from './components/ErrorBoundary'
-import Layout from './components/Layout/Layout'
-import Spinner from './components/Spinner'
-import Routes from './Routes'
+import router from './router'
 
 const App: React.FC = memo(() => (
   <ErrorBoundary>
-    <Suspense fallback={<Spinner size="xl" />}>
-      <Layout>
-        <Routes />
-      </Layout>
-    </Suspense>
+    <RouterProvider router={router} />
   </ErrorBoundary>
 ))
-
 App.displayName = 'App'
 export default App
