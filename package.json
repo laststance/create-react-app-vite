@@ -63,7 +63,7 @@
     "jsdom": "^24.0.0",
     "lint-staged": "^15.2.2",
     "msw": "^2.1.7",
-    "postcss": "^8.4.34",
+    "postcss": "^8.4.35",
     "postcss-import": "^16.0.0",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.11",
