@@ -110,8 +110,8 @@ devDependencies:
     specifier: ^15.2.2
     version: 15.2.2
   msw:
-    specifier: ^2.2.0
-    version: 2.2.0(typescript@5.3.3)
+    specifier: ^2.2.1
+    version: 2.2.1(typescript@5.3.3)
   postcss:
     specifier: ^8.4.35
     version: 8.4.35
@@ -659,7 +659,7 @@ packages:
     engines: {node: '>=14.18.0'}
     dependencies:
       '@inquirer/core': 5.0.1
-      '@inquirer/type': 1.1.5
+      '@inquirer/type': 1.2.0
       ansi-escapes: 4.3.2
       chalk: 4.1.2
       figures: 3.2.0
@@ -670,7 +670,7 @@ packages:
     engines: {node: '>=14.18.0'}
     dependencies:
       '@inquirer/core': 5.0.1
-      '@inquirer/type': 1.1.5
+      '@inquirer/type': 1.2.0
       chalk: 4.1.2
     dev: true
 
@@ -686,13 +686,13 @@ packages:
     resolution: {integrity: sha512-mRf9YFdrSa3+nHA8n/SUF/sDJcK6C5KlXS5xYwIB2NWfESYYBM2KTpubJPBR0sJxsrsZZC2WgfYl8TURPvMm8g==}
     engines: {node: '>=14.18.0'}
     dependencies:
-      '@inquirer/type': 1.1.5
+      '@inquirer/type': 1.2.0
       '@types/mute-stream': 0.0.1
-      '@types/node': 20.7.0
+      '@types/node': 20.11.17
       '@types/wrap-ansi': 3.0.0
       ansi-escapes: 4.3.2
       chalk: 4.1.2
-      cli-spinners: 2.9.1
+      cli-spinners: 2.9.2
       cli-width: 4.1.0
       figures: 3.2.0
       mute-stream: 1.0.0
@@ -727,7 +727,7 @@ packages:
     engines: {node: '>=14.18.0'}
     dependencies:
       '@inquirer/core': 5.0.1
-      '@inquirer/type': 1.1.5
+      '@inquirer/type': 1.2.0
       chalk: 4.1.2
       external-editor: 3.1.0
     dev: true
@@ -737,7 +737,7 @@ packages:
     engines: {node: '>=14.18.0'}
     dependencies:
       '@inquirer/core': 5.0.1
-      '@inquirer/type': 1.1.5
+      '@inquirer/type': 1.2.0
       chalk: 4.1.2
       figures: 3.2.0
     dev: true
@@ -747,7 +747,7 @@ packages:
     engines: {node: '>=14.18.0'}
     dependencies:
       '@inquirer/core': 5.0.1
-      '@inquirer/type': 1.1.5
+      '@inquirer/type': 1.2.0
       chalk: 4.1.2
     dev: true
 
@@ -756,7 +756,7 @@ packages:
     engines: {node: '>=14.18.0'}
     dependencies:
       '@inquirer/input': 1.2.12
-      '@inquirer/type': 1.1.5
+      '@inquirer/type': 1.2.0
       ansi-escapes: 4.3.2
       chalk: 4.1.2
     dev: true
@@ -781,7 +781,7 @@ packages:
     engines: {node: '>=14.18.0'}
     dependencies:
       '@inquirer/core': 5.0.1
-      '@inquirer/type': 1.1.5
+      '@inquirer/type': 1.2.0
       chalk: 4.1.2
     dev: true
 
@@ -790,15 +790,10 @@ packages:
     engines: {node: '>=14.18.0'}
     dependencies:
       '@inquirer/core': 5.0.1
-      '@inquirer/type': 1.1.5
+      '@inquirer/type': 1.2.0
       ansi-escapes: 4.3.2
       chalk: 4.1.2
       figures: 3.2.0
-    dev: true
-
-  /@inquirer/type@1.1.5:
-    resolution: {integrity: sha512-wmwHvHozpPo4IZkkNtbYenem/0wnfI6hvOcGKmPEa0DwuaH5XUQzFqy6OpEpjEegZMhYIk8HDYITI16BPLtrRA==}
-    engines: {node: '>=14.18.0'}
     dev: true
 
   /@inquirer/type@1.2.0:
@@ -1462,7 +1457,7 @@ packages:
   /@types/mute-stream@0.0.1:
     resolution: {integrity: sha512-0yQLzYhCqGz7CQPE3iDmYjhb7KMBFOP+tBkyw+/Y2YyDI5wpS7itXXxneN1zSsUwWx3Ji6YiVYrhAnpQGS/vkw==}
     dependencies:
-      '@types/node': 20.7.0
+      '@types/node': 20.11.17
     dev: true
 
   /@types/mute-stream@0.0.4:
@@ -2191,11 +2186,6 @@ packages:
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
       restore-cursor: 4.0.0
-    dev: true
-
-  /cli-spinners@2.9.1:
-    resolution: {integrity: sha512-jHgecW0pxkonBJdrKsqxgRX9AcG+u/5k0Q7WPDfi8AogLAdwxEkyYYNWwZ5GvVFoFx2uiY1eNcSK00fh+1+FyQ==}
-    engines: {node: '>=6'}
     dev: true
 
   /cli-spinners@2.9.2:
@@ -4268,8 +4258,8 @@ packages:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
     dev: true
 
-  /msw@2.2.0(typescript@5.3.3):
-    resolution: {integrity: sha512-98cUGcIphhdf3KDbmSxji7XFqLxeSFAmPUNV00N/U76GOkuUKEwp6MHqM6KW70rlpgeJP8qIWueppdnVThzG1g==}
+  /msw@2.2.1(typescript@5.3.3):
+    resolution: {integrity: sha512-DCsZAQwan+2onEcpD86fiEnCKW4IvYzqcwDq/2TIoeNrmBqNp/mJW4wHQyxcoYrRPwgujin7wDFflqiSO1iT/w==}
     engines: {node: '>=18'}
     hasBin: true
     requiresBuild: true
@@ -4503,7 +4493,7 @@ packages:
       bl: 4.1.0
       chalk: 4.1.2
       cli-cursor: 3.1.0
-      cli-spinners: 2.9.1
+      cli-spinners: 2.9.2
       is-interactive: 1.0.0
       is-unicode-supported: 0.1.0
       log-symbols: 4.1.0
