@@ -29,7 +29,7 @@
     "clsx": "^2.1.0",
     "react": "18.3.0-canary-08a39539f-20231031",
     "react-dom": "18.3.0-canary-08a39539f-20231031",
-    "react-router-dom": "^6.22.1"
+    "react-router-dom": "^6.22.2"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
