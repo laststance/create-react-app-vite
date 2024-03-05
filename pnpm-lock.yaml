@@ -60,7 +60,7 @@ devDependencies:
     version: 6.21.0(eslint@8.57.0)(typescript@5.3.3)
   '@vitejs/plugin-react-swc':
     specifier: ^3.6.0
-    version: 3.6.0(vite@5.1.4)
+    version: 3.6.0(vite@5.1.5)
   '@vitest/ui':
     specifier: ^0.34.7
     version: 0.34.7(vitest@0.34.6)
@@ -137,14 +137,14 @@ devDependencies:
     specifier: ^5.3.3
     version: 5.3.3
   vite:
-    specifier: ^5.1.4
-    version: 5.1.4(@types/node@20.7.0)
+    specifier: ^5.1.5
+    version: 5.1.5(@types/node@20.7.0)
   vite-plugin-environment:
     specifier: ^1.1.3
-    version: 1.1.3(vite@5.1.4)
+    version: 1.1.3(vite@5.1.5)
   vite-plugin-svgr:
     specifier: ^4.2.0
-    version: 4.2.0(typescript@5.3.3)(vite@5.1.4)
+    version: 4.2.0(typescript@5.3.3)(vite@5.1.5)
   vitest:
     specifier: ^0.34.6
     version: 0.34.6(@vitest/ui@0.34.7)(jsdom@24.0.0)
@@ -1647,13 +1647,13 @@ packages:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
     dev: true
 
-  /@vitejs/plugin-react-swc@3.6.0(vite@5.1.4):
+  /@vitejs/plugin-react-swc@3.6.0(vite@5.1.5):
     resolution: {integrity: sha512-XFRbsGgpGxGzEV5i5+vRiro1bwcIaZDIdBRP16qwm+jP68ue/S8FJTBEgOeojtVDYrbSua3XFp71kC8VJE6v+g==}
     peerDependencies:
       vite: ^4 || ^5
     dependencies:
       '@swc/core': 1.3.107
-      vite: 5.1.4(@types/node@20.7.0)
+      vite: 5.1.5(@types/node@20.7.0)
     transitivePeerDependencies:
       - '@swc/helpers'
     dev: true
@@ -5755,7 +5755,7 @@ packages:
       mlly: 1.4.2
       pathe: 1.1.1
       picocolors: 1.0.0
-      vite: 5.1.4(@types/node@20.7.0)
+      vite: 5.1.5(@types/node@20.7.0)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -5767,15 +5767,15 @@ packages:
       - terser
     dev: true
 
-  /vite-plugin-environment@1.1.3(vite@5.1.4):
+  /vite-plugin-environment@1.1.3(vite@5.1.5):
     resolution: {integrity: sha512-9LBhB0lx+2lXVBEWxFZC+WO7PKEyE/ykJ7EPWCq95NEcCpblxamTbs5Dm3DLBGzwODpJMEnzQywJU8fw6XGGGA==}
     peerDependencies:
       vite: '>= 2.7'
     dependencies:
-      vite: 5.1.4(@types/node@20.7.0)
+      vite: 5.1.5(@types/node@20.7.0)
     dev: true
 
-  /vite-plugin-svgr@4.2.0(typescript@5.3.3)(vite@5.1.4):
+  /vite-plugin-svgr@4.2.0(typescript@5.3.3)(vite@5.1.5):
     resolution: {integrity: sha512-SC7+FfVtNQk7So0XMjrrtLAbEC8qjFPifyD7+fs/E6aaNdVde6umlVVh0QuwDLdOMu7vp5RiGFsB70nj5yo0XA==}
     peerDependencies:
       vite: ^2.6.0 || 3 || 4 || 5
@@ -5783,15 +5783,15 @@ packages:
       '@rollup/pluginutils': 5.0.5
       '@svgr/core': 8.1.0(typescript@5.3.3)
       '@svgr/plugin-jsx': 8.1.0(@svgr/core@8.1.0)
-      vite: 5.1.4(@types/node@20.7.0)
+      vite: 5.1.5(@types/node@20.7.0)
     transitivePeerDependencies:
       - rollup
       - supports-color
       - typescript
     dev: true
 
-  /vite@5.1.4(@types/node@20.7.0):
-    resolution: {integrity: sha512-n+MPqzq+d9nMVTKyewqw6kSt+R3CkvF9QAKY8obiQn8g1fwTscKxyfaYnC632HtBXAQGc1Yjomphwn1dtwGAHg==}
+  /vite@5.1.5(@types/node@20.7.0):
+    resolution: {integrity: sha512-BdN1xh0Of/oQafhU+FvopafUp6WaYenLU/NFoL5WyJL++GxkNfieKzBhM24H3HVsPQrlAqB7iJYTHabzaRed5Q==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -5880,7 +5880,7 @@ packages:
       strip-literal: 1.3.0
       tinybench: 2.5.1
       tinypool: 0.7.0
-      vite: 5.1.4(@types/node@20.7.0)
+      vite: 5.1.5(@types/node@20.7.0)
       vite-node: 0.34.6(@types/node@20.7.0)
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
