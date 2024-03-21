@@ -23,7 +23,7 @@
     "clean": "rimraf node_modules package-lock.json dist",
     "validate": "./scripts/validate",
     "remove:tailwind": "scripts/remove_tailwind.js",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "dependencies": {
     "clsx": "^2.1.0",
