@@ -47,13 +47,13 @@ devDependencies:
     specifier: ^8.56.6
     version: 8.56.6
   '@types/react':
-    specifier: ^18.2.33
+    specifier: ^18.2.67
     version: 18.2.67
   '@types/react-dom':
-    specifier: ^18.2.14
+    specifier: ^18.2.22
     version: 18.2.22
   '@typescript-eslint/eslint-plugin':
-    specifier: ^7.0.0
+    specifier: ^7.3.1
     version: 7.3.1(@typescript-eslint/parser@7.3.1)(eslint@8.57.0)(typescript@5.4.3)
   '@typescript-eslint/parser':
     specifier: ^7.3.1
@@ -68,7 +68,7 @@ devDependencies:
     specifier: ^6.26.1
     version: 6.26.1
   autoprefixer:
-    specifier: ^10.4.18
+    specifier: ^10.4.19
     version: 10.4.19(postcss@8.4.38)
   concurrently:
     specifier: ^8.2.2
@@ -113,10 +113,10 @@ devDependencies:
     specifier: ^2.2.9
     version: 2.2.9(typescript@5.4.3)
   postcss:
-    specifier: ^8.4.37
+    specifier: ^8.4.38
     version: 8.4.38
   postcss-import:
-    specifier: ^16.0.1
+    specifier: ^16.1.0
     version: 16.1.0(postcss@8.4.38)
   prettier:
     specifier: ^3.2.5
@@ -134,7 +134,7 @@ devDependencies:
     specifier: ^1.3.0
     version: 1.3.0
   typescript:
-    specifier: ^5.4.2
+    specifier: ^5.4.3
     version: 5.4.3
   vite:
     specifier: ^5.2.2
