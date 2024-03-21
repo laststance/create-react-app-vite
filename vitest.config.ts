@@ -1,7 +1,14 @@
+import path from 'node:path'
+
 import EnvironmentPlugin from 'vite-plugin-environment'
 import { defineConfig } from 'vitest/config'
 export default defineConfig({
   plugins: [EnvironmentPlugin(['REACT_APP_TEXT'])],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
   test: {
     environment: 'jsdom',
     globals: true,

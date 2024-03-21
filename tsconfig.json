@@ -15,12 +15,16 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
     "types": ["vitest/globals", "@testing-library/jest-dom"]
   },
   "include": [
     "./src",
     "./@types",
-    "mocks",
+    "./mocks",
     "scripts",
     "./**.js",
     "./**ts",
