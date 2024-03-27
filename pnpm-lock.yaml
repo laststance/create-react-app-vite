@@ -110,8 +110,8 @@ devDependencies:
     specifier: ^15.2.2
     version: 15.2.2
   msw:
-    specifier: ^2.2.11
-    version: 2.2.11(typescript@5.4.3)
+    specifier: ^2.2.12
+    version: 2.2.12(typescript@5.4.3)
   postcss:
     specifier: ^8.4.38
     version: 8.4.38
@@ -824,8 +824,8 @@ packages:
     engines: {node: '>=18'}
     dev: true
 
-  /@mswjs/interceptors@0.25.16:
-    resolution: {integrity: sha512-8QC8JyKztvoGAdPgyZy49c9vSHHAZjHagwl4RY9E8carULk8ym3iTaiawrT1YoLF/qb449h48f71XDPgkUSOUg==}
+  /@mswjs/interceptors@0.26.13:
+    resolution: {integrity: sha512-1vsdtQfcd2ot01rGsxnbQn5fi3rY/Ien4zwacIrGi421UvYNBeoaVUg2qWYXt4S1t92K+vf46XjhUxC0+B9GtA==}
     engines: {node: '>=18'}
     dependencies:
       '@open-draft/deferred-promise': 2.2.0
@@ -4149,8 +4149,8 @@ packages:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
     dev: true
 
-  /msw@2.2.11(typescript@5.4.3):
-    resolution: {integrity: sha512-XtIoewF7XWLT0a39Ftkazt9PprBA1bxHZ4CSlomN74sCBJOJU2w5VwLmGlswwsOBhGoF7jovt6bxrSIESxA1KA==}
+  /msw@2.2.12(typescript@5.4.3):
+    resolution: {integrity: sha512-thmjEipUvr+XGawcNOh4T8+T2TN3qKWPfF0Ewx6ub1HIATXBsjOhnjV6Wx2BmmFThKEtYYC+RygrvkpG4DzoZw==}
     engines: {node: '>=18'}
     hasBin: true
     requiresBuild: true
@@ -4164,7 +4164,7 @@ packages:
       '@bundled-es-modules/statuses': 1.0.1
       '@inquirer/confirm': 3.1.0
       '@mswjs/cookies': 1.1.0
-      '@mswjs/interceptors': 0.25.16
+      '@mswjs/interceptors': 0.26.13
       '@open-draft/until': 2.1.0
       '@types/cookie': 0.6.0
       '@types/statuses': 2.0.5
