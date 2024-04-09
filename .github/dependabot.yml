@@ -8,3 +8,4 @@ updates:
     ignore:
       - dependency-name: 'react'
       - dependency-name: 'react-dom'
+      - dependency-name: 'eslint'
