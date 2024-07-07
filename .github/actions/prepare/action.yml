@@ -4,13 +4,13 @@ name: Prepare
 
 runs:
   steps:
-    - uses: pnpm/action-setup@v2
-      with:
-        version: 8
     - uses: actions/setup-node@v3
       with:
         cache: pnpm
         node-version: '20'
-    - run: pnpm install --no-frozen-lockfile"
+    - uses: pnpm/action-setup@v4
+      with:
+        version: 9
+    - run: pnpm install"
       shell: bash
   using: composite
