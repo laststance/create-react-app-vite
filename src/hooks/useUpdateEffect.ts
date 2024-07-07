@@ -7,7 +7,7 @@ const useUpdateEffect = (
   effect: AnyFunction,
   deps: any[] | undefined = undefined,
 ): void => {
-  const mounted = useRef<boolean>()
+  const mounted = useRef<boolean>(false)
   useEffect(() => {
     if (!mounted.current) {
       // fire componentDidMount
