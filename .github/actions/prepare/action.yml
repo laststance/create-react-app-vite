@@ -11,6 +11,6 @@ runs:
       with:
         cache: pnpm
         node-version: '20'
-    - run: pnpm install --frozen-lockfile
+    - run: pnpm install --no-frozen-lockfile"
       shell: bash
   using: composite
