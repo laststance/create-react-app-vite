@@ -75,5 +75,8 @@
     "vite-plugin-environment": "^1.1.3",
     "vite-plugin-svgr": "^4.2.0",
     "vitest": "^1.4.0"
+  },
+  "volta": {
+    "node": "20.15.0"
   }
 }
