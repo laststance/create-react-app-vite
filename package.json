@@ -44,7 +44,7 @@
     "@types/react": "npm:types-react@rc",
     "@types/react-dom": "npm:types-react-dom@rc",
     "@typescript-eslint/eslint-plugin": "^7.14.1",
-    "@typescript-eslint/parser": "^7.14.1",
+    "@typescript-eslint/parser": "^7.16.0",
     "@vitejs/plugin-react-swc": "^3.7.0",
     "@vitest/ui": "^1.4.0",
     "all-contributors-cli": "^6.26.1",
