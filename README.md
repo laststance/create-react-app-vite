@@ -62,7 +62,7 @@ pnpm remove:tailwind # remove TailwindCSS
 Simply put, CRA development has stopped as of 2023.
 This has sparked a discussion about replacing CRA with Vite for official documentation recommendations.
 [Replace Create React App recommendation with Vite](https://github.com/reactjs/react.dev/pull/5487)
-Dan Avramov offered some plans for the future of the CRA in his comments, but no direct answers were given.
+Dan Abramov offered some plans for the future of the CRA in his comments, but no direct answers were given.
 https://github.com/reactjs/react.dev/pull/5487#issuecomment-1409720741
 
 The React community is still buzzing around Server Component after May 2023, but there is still a high demand for the React SinglePageAplication starter that the CRA has served in the past, and I was one of the people who needed it, I was one of the people who needed it, so I decided to create a template in Vite that could be used as much as possible like CRA.
