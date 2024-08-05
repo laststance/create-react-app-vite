@@ -48,7 +48,7 @@
     "@vitejs/plugin-react-swc": "^3.7.0",
     "@vitest/ui": "^1.4.0",
     "all-contributors-cli": "^6.26.1",
-    "autoprefixer": "^10.4.19",
+    "autoprefixer": "^10.4.20",
     "concurrently": "^8.2.2",
     "cross-fetch": "^4.0.0",
     "eslint": "^8.57.0",
