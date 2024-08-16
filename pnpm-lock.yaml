@@ -62,7 +62,7 @@ importers:
         version: 7.18.0(eslint@8.57.0)(typescript@5.5.4)
       '@vitejs/plugin-react-swc':
         specifier: ^3.7.0
-        version: 3.7.0(vite@5.4.0(@types/node@22.3.0))
+        version: 3.7.0(vite@5.4.1(@types/node@22.3.0))
       '@vitest/ui':
         specifier: ^1.4.0
         version: 1.6.0(vitest@1.6.0)
@@ -139,14 +139,14 @@ importers:
         specifier: ^5.5.4
         version: 5.5.4
       vite:
-        specifier: ^5.4.0
-        version: 5.4.0(@types/node@22.3.0)
+        specifier: ^5.4.1
+        version: 5.4.1(@types/node@22.3.0)
       vite-plugin-environment:
         specifier: ^1.1.3
-        version: 1.1.3(vite@5.4.0(@types/node@22.3.0))
+        version: 1.1.3(vite@5.4.1(@types/node@22.3.0))
       vite-plugin-svgr:
         specifier: ^4.2.0
-        version: 4.2.0(rollup@4.18.0)(typescript@5.5.4)(vite@5.4.0(@types/node@22.3.0))
+        version: 4.2.0(rollup@4.18.0)(typescript@5.5.4)(vite@5.4.1(@types/node@22.3.0))
       vitest:
         specifier: ^1.4.0
         version: 1.6.0(@types/node@22.3.0)(@vitest/ui@1.6.0)(jsdom@24.1.1)
@@ -3153,8 +3153,8 @@ packages:
     peerDependencies:
       vite: ^2.6.0 || 3 || 4 || 5
 
-  vite@5.4.0:
-    resolution: {integrity: sha512-5xokfMX0PIiwCMCMb9ZJcMyh5wbBun0zUzKib+L65vAZ8GY9ePZMXxFrHbr/Kyll2+LSCY7xtERPpxkBDKngwg==}
+  vite@5.4.1:
+    resolution: {integrity: sha512-1oE6yuNXssjrZdblI9AfBbHCC41nnyoVoEZxQnID6yvQZAFBzxxkqoFLtHUMkYunL8hwOLEjgTuxpkRxvba3kA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -4166,10 +4166,10 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@vitejs/plugin-react-swc@3.7.0(vite@5.4.0(@types/node@22.3.0))':
+  '@vitejs/plugin-react-swc@3.7.0(vite@5.4.1(@types/node@22.3.0))':
     dependencies:
       '@swc/core': 1.6.13
-      vite: 5.4.0(@types/node@22.3.0)
+      vite: 5.4.1(@types/node@22.3.0)
     transitivePeerDependencies:
       - '@swc/helpers'
 
@@ -6533,7 +6533,7 @@ snapshots:
       debug: 4.3.6
       pathe: 1.1.2
       picocolors: 1.0.1
-      vite: 5.4.0(@types/node@22.3.0)
+      vite: 5.4.1(@types/node@22.3.0)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -6545,22 +6545,22 @@ snapshots:
       - supports-color
       - terser
 
-  vite-plugin-environment@1.1.3(vite@5.4.0(@types/node@22.3.0)):
+  vite-plugin-environment@1.1.3(vite@5.4.1(@types/node@22.3.0)):
     dependencies:
-      vite: 5.4.0(@types/node@22.3.0)
+      vite: 5.4.1(@types/node@22.3.0)
 
-  vite-plugin-svgr@4.2.0(rollup@4.18.0)(typescript@5.5.4)(vite@5.4.0(@types/node@22.3.0)):
+  vite-plugin-svgr@4.2.0(rollup@4.18.0)(typescript@5.5.4)(vite@5.4.1(@types/node@22.3.0)):
     dependencies:
       '@rollup/pluginutils': 5.1.0(rollup@4.18.0)
       '@svgr/core': 8.1.0(typescript@5.5.4)
       '@svgr/plugin-jsx': 8.1.0(@svgr/core@8.1.0(typescript@5.5.4))
-      vite: 5.4.0(@types/node@22.3.0)
+      vite: 5.4.1(@types/node@22.3.0)
     transitivePeerDependencies:
       - rollup
       - supports-color
       - typescript
 
-  vite@5.4.0(@types/node@22.3.0):
+  vite@5.4.1(@types/node@22.3.0):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.4.41
@@ -6588,7 +6588,7 @@ snapshots:
       strip-literal: 2.1.0
       tinybench: 2.8.0
       tinypool: 0.8.4
-      vite: 5.4.0(@types/node@22.3.0)
+      vite: 5.4.1(@types/node@22.3.0)
       vite-node: 1.6.0(@types/node@22.3.0)
       why-is-node-running: 2.2.2
     optionalDependencies:
