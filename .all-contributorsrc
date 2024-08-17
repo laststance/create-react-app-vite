@@ -29,8 +29,18 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "shayc",
+      "name": "Shay Cojocaru",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6969966?v=4",
+      "profile": "https://github.com/shayc",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
-  "skipCi": true
+  "skipCi": true,
+  "commitType": "docs"
 }
