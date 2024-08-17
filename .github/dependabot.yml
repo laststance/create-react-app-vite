@@ -6,6 +6,4 @@ updates:
     schedule:
       interval: 'daily'
     ignore:
-      - dependency-name: 'react'
-      - dependency-name: 'react-dom'
       - dependency-name: 'eslint'

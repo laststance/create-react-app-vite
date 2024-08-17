@@ -20,15 +20,15 @@
     "lint:fix": "eslint . --ext .ts,.tsx,.js,jsx,cjs,mjs --fix",
     "typecheck": "tsc --noEmit",
     "prettier": "prettier --ignore-unknown --write .",
-    "clean": "rimraf node_modules package-lock.json dist",
+    "clean": "rimraf node_modules pnpm-lock.yaml dist",
     "validate": "./scripts/validate",
     "remove:tailwind": "scripts/remove_tailwind.js",
     "prepare": "husky"
   },
   "dependencies": {
     "clsx": "^2.1.1",
-    "react": "19.0.0-rc-f38c22b244-20240704",
-    "react-dom": "19.0.0-rc-f38c22b244-20240704",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.1"
   },
   "devDependencies": {
@@ -41,8 +41,8 @@
     "@testing-library/react": "^16.0.0",
     "@testing-library/user-event": "^14.5.2",
     "@types/eslint": "^8.56.7",
-    "@types/react": "npm:types-react@rc",
-    "@types/react-dom": "npm:types-react-dom@rc",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@typescript-eslint/parser": "^7.18.0",
     "@vitejs/plugin-react-swc": "^3.7.0",
@@ -77,6 +77,6 @@
     "vitest": "^1.4.0"
   },
   "volta": {
-    "node": "20.15.1"
+    "node": "20.16.0"
   }
 }
