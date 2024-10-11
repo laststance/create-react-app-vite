@@ -38,6 +38,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "NateAGeek",
+      "name": "NateAGeek",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1813055?v=4",
+      "profile": "https://github.com/NateAGeek",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
