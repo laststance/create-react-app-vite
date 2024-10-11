@@ -11,7 +11,7 @@ if (process.env.NODE_ENV === 'development') {
   // Certify MSW's Service Worker is available before start React app.
   import('../mocks/browser')
     .then(({ worker }) => {
-      worker.start()
+      return worker.start()
     }) // Run <App /> when Service Worker is ready to intercept requests.
     .then(() => {
       root.render(<App />)
