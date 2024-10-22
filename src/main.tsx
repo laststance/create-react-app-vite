@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById('root')!)
 if (process.env.NODE_ENV === 'development') {
   // Certify MSW's Service Worker is available before start React app.
   import('../mocks/browser')
-    .then(({ worker }) => {
+    .then(async ({ worker }) => {
       return worker.start()
     }) // Run <App /> when Service Worker is ready to intercept requests.
     .then(() => {
