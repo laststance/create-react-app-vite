@@ -27,7 +27,7 @@
     "./mocks",
     "scripts",
     "./**.js",
-    "./**ts",
+    "./**.ts",
     "eslint.config.mjs"
   ],
   "exclude": ["dist"]
