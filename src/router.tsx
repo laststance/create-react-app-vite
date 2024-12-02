@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom'
+import { createBrowserRouter } from 'react-router'
 
 import Layout from './components/Layout/Layout'
 import Index from './pages/Index'
