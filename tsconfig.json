@@ -28,7 +28,7 @@
     "scripts",
     "./**.js",
     "./**ts",
-    ".eslintrc.cjs"
+    "eslint.config.mjs"
   ],
   "exclude": ["dist"]
 }
