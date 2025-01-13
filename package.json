@@ -32,7 +32,7 @@
     "react-router": "^7.1.1"
   },
   "devDependencies": {
-    "@eslint/compat": "^1.2.4",
+    "@eslint/compat": "^1.2.5",
     "@eslint/eslintrc": "^3.2.0",
     "@eslint/js": "^9.18.0",
     "@tailwindcss/aspect-ratio": "^0.4.2",
