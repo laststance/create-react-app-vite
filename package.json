@@ -50,7 +50,7 @@
     "@typescript-eslint/eslint-plugin": "^8.28.0",
     "@typescript-eslint/parser": "^8.28.0",
     "@vitejs/plugin-react-swc": "^3.8.1",
-    "@vitest/ui": "^2.1.6",
+    "@vitest/ui": "^3.0.9",
     "all-contributors-cli": "^6.26.1",
     "concurrently": "^9.1.2",
     "cross-fetch": "^4.1.0",
