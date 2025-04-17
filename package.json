@@ -78,6 +78,13 @@
     "vite-plugin-svgr": "^4.3.0",
     "vitest": "^3.0.9"
   },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@swc/core",
+      "esbuild",
+      "msw"
+    ]
+  },
   "volta": {
     "node": "20.16.0"
   }
