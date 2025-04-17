@@ -20,7 +20,7 @@ All npm package are keeping least release version powered by [Dependabot](https:
 # Installation
 
 ```
-npx degit laststance/create-react-app-vite myapp
+npx tiged laststance/create-react-app-vite myapp
 ```
 
 ### pnpm
