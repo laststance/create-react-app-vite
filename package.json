@@ -82,7 +82,8 @@
     "onlyBuiltDependencies": [
       "@swc/core",
       "esbuild",
-      "msw"
+      "msw",
+      "unrs-resolver"
     ]
   },
   "volta": {
