@@ -55,7 +55,7 @@
     "concurrently": "^9.2.0",
     "cross-fetch": "^4.1.0",
     "eslint": "^9.29.0",
-    "eslint-config-ts-prefixer": "^1.14.2",
+    "eslint-config-ts-prefixer": "^3.0.3",
     "eslint-import-resolver-typescript": "^4.4.3",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
