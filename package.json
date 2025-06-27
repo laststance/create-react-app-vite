@@ -2,22 +2,24 @@
   "name": "create-react-app-vite",
   "version": "0.4.0",
   "license": "MIT",
+  "type": "module",
   "msw": {
     "workerDirectory": "public"
   },
   "lint-staged": {
-    "*": "prettier --ignore-unknown --write"
+    "*": "prettier --ignore-unknown --write",
+    "*.{js,jsx,ts,tsx}": "eslint --fix"
   },
   "scripts": {
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "vitest --run",
+    "test": "vitest run",
     "test:ui": "vitest --ui",
     "test:watch": "vitest",
-    "lint": "eslint . -c eslint.config.mjs",
-    "lint:fix": "eslint . -c eslint.config.mjs --fix",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "typecheck": "tsc --noEmit",
     "prettier": "prettier --ignore-unknown --write .",
     "clean": "rimraf node_modules pnpm-lock.yaml dist",
@@ -32,12 +34,9 @@
     "react-router": "^7.6.2"
   },
   "devDependencies": {
-    "@eslint/compat": "^1.3.0",
-    "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.29.0",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.10",
-    "@tailwindcss/line-clamp": "^0.4.4",
     "@tailwindcss/postcss": "^4.1.10",
     "@tailwindcss/typography": "^0.5.16",
     "@testing-library/dom": "^10.4.0",
@@ -45,21 +44,16 @@
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.6.1",
     "@types/eslint": "^9.6.1",
+    "@types/node": "^24.0.4",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
-    "@typescript-eslint/eslint-plugin": "^8.35.0",
-    "@typescript-eslint/parser": "^8.35.0",
     "@vitejs/plugin-react-swc": "^3.10.2",
     "@vitest/ui": "^3.1.1",
     "all-contributors-cli": "^6.26.1",
     "concurrently": "^9.2.0",
     "cross-fetch": "^4.1.0",
     "eslint": "^9.29.0",
-    "eslint-config-ts-prefixer": "^1.14.2",
-    "eslint-import-resolver-typescript": "^4.4.3",
-    "eslint-plugin-import": "^2.32.0",
-    "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-prettier": "^5.5.1",
+    "eslint-config-ts-prefixer": "^3.0.3",
     "eslint-plugin-react-hooks": "^5.2.0",
     "husky": "^9.1.7",
     "jsdom": "^26.1.0",
@@ -87,6 +81,6 @@
     ]
   },
   "volta": {
-    "node": "22.16.0"
+    "node": "22.17.0"
   }
 }
