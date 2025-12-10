@@ -15,6 +15,7 @@ const useUpdateEffect = (
     } else {
       effect()
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- intentional: deps are passed dynamically to simulate componentDidUpdate
   }, deps)
 }
 
