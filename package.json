@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "license": "MIT",
   "type": "module",
+  "packageManager": "pnpm@10.25.0",
   "volta": {
     "node": "22.21.1"
   },
