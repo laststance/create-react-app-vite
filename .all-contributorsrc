@@ -47,6 +47,15 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "sickhippie",
+      "name": "sickhippie",
+      "avatar_url": "https://avatars.githubusercontent.com/u/688638?v=4",
+      "profile": "https://github.com/sickhippie",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
