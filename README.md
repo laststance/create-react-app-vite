@@ -15,7 +15,7 @@ I'd like to keep CRA like experience as much as possible, so improving/adding fe
 - [tailwindcss](https://tailwindcss.com/)
 - [Github Actions](https://github.com/features/actions)
 
-All npm packages are updated  to the latest release version powered by [Dependabot](https://github.com/dependabot).
+All npm packages are updated to the latest release version powered by [Dependabot](https://github.com/dependabot).
 
 # Installation
 
