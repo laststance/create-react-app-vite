@@ -65,7 +65,7 @@ This has sparked a discussion about replacing CRA with Vite for official documen
 Dan Abramov offered some plans for the future of the CRA in his comments, but no direct answers were given.
 https://github.com/reactjs/react.dev/pull/5487#issuecomment-1409720741
 
-The React community is still buzzing around Server Component after May 2023, but there is still a high demand for the React SinglePageAplication starter that the CRA has served in the past, and I was one of the people who needed it, so I decided to create a template in Vite that could be used as much as possible like CRA.
+The React community is still buzzing around Server Component after May 2023, but there is still a high demand for the React SinglePageApplication starter that the CRA has served in the past, and I was one of the people who needed it, so I decided to create a template in Vite that could be used as much as possible like CRA.
 
 # License
 
