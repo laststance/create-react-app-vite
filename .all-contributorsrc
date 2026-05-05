@@ -56,6 +56,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "amitd291",
+      "name": "Amit",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18529185?v=4",
+      "profile": "https://github.com/amitd291",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
