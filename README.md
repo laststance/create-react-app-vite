@@ -86,6 +86,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/shayc"><img src="https://avatars.githubusercontent.com/u/6969966?v=4?s=100" width="100px;" alt="Shay Cojocaru"/><br /><sub><b>Shay Cojocaru</b></sub></a><br /><a href="https://github.com/laststance/create-react-app-vite/commits?author=shayc" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/NateAGeek"><img src="https://avatars.githubusercontent.com/u/1813055?v=4?s=100" width="100px;" alt="NateAGeek"/><br /><sub><b>NateAGeek</b></sub></a><br /><a href="https://github.com/laststance/create-react-app-vite/issues?q=author%3ANateAGeek" title="Bug reports">🐛</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/sickhippie"><img src="https://avatars.githubusercontent.com/u/688638?v=4?s=100" width="100px;" alt="sickhippie"/><br /><sub><b>sickhippie</b></sub></a><br /><a href="https://github.com/laststance/create-react-app-vite/commits?author=sickhippie" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/amitd291"><img src="https://avatars.githubusercontent.com/u/18529185?v=4?s=100" width="100px;" alt="Amit"/><br /><sub><b>Amit</b></sub></a><br /><a href="https://github.com/laststance/create-react-app-vite/commits?author=amitd291" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
