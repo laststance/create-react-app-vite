@@ -62,7 +62,7 @@
     "eslint-plugin-react-hooks": "^7.1.1",
     "husky": "^9.1.7",
     "jsdom": "^29.1.0",
-    "lint-staged": "^16.4.0",
+    "lint-staged": "^17.0.4",
     "msw": "^2.13.6",
     "postcss": "^8.5.12",
     "prettier": "^3.8.3",
