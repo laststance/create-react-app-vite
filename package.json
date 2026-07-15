@@ -57,7 +57,7 @@
     "concurrently": "^10.0.3",
     "cross-fetch": "^4.1.0",
     "eslint": "^10.7.0",
-    "eslint-config-ts-prefixer": "^4.2.0",
+    "eslint-config-ts-prefixer": "^4.2.1",
     "eslint-import-resolver-node": "^0.4.0",
     "eslint-plugin-react-hooks": "^7.1.1",
     "husky": "^9.1.7",
