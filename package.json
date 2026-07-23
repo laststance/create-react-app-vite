@@ -64,7 +64,7 @@
     "jsdom": "^29.1.1",
     "lint-staged": "^17.1.0",
     "msw": "^2.15.0",
-    "postcss": "^8.5.20",
+    "postcss": "^8.5.22",
     "prettier": "^3.9.6",
     "prettier-plugin-tailwindcss": "^0.8.1",
     "rimraf": "^6.1.3",
