@@ -33,7 +33,7 @@ Full setup spec and prompt: `.cursor/automations/merge-stuck-dependabot-prs.md`.
 When triggered, the agent should:
 
 1. List open `dependabot[bot]` PRs and flag stuck ones (conflicts, stale, or green-but-unmerged).
-2. Try direct merge when possible; otherwise consolidate all pending bumps onto current `main` in one PR.
+2. Request automatic merges when possible; otherwise consolidate pending bumps onto current `main` in one PR. Never bypass required branch protection.
 3. Keep `react` and `react-dom` on the same version range when either is bumped.
 4. Run `pnpm install` and `pnpm validate` before merging.
-5. Force-update obsolete Dependabot branches to `main` so superseded PRs auto-close.
+5. Do not rewrite Dependabot branches. Report superseded PRs and leave them open for maintainer cleanup.

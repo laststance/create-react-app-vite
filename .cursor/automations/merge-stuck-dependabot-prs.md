@@ -47,7 +47,9 @@ If no stuck Dependabot PRs exist, reply with a one-line summary and stop.
 For each stuck PR that is mergeable (no conflicts):
 
 1. Ensure CI would pass — run `pnpm validate` on a branch that includes the PR changes.
-2. Merge with `gh pr merge <number> --merge --admin`.
+2. Request an automatic merge with `gh pr merge <number> --merge --auto` so required
+   branch-protection checks remain in force. If repository policy blocks the merge,
+   leave the PR open and report the blocker.
 3. Record the result.
 
 Skip to Step 4 for PRs handled here.
@@ -68,10 +70,10 @@ When multiple Dependabot PRs conflict with each other or with `main`:
 7. Commit, push, open a PR titled
    `chore(deps): merge stuck Dependabot dependency updates` and reference the
    superseded PR numbers in the body.
-8. Merge that PR into `main` with `gh pr merge --merge --admin`.
-9. For each original Dependabot branch, run:
-   `git push origin main:refs/heads/<dependabot-branch> --force-with-lease`
-   so GitHub auto-closes the obsolete PRs.
+8. Request an automatic merge with `gh pr merge --merge --auto` so required
+   branch-protection checks remain in force.
+9. Do not rewrite Dependabot branches. Report the original PRs as superseded and leave
+   them open for maintainer cleanup.
 
 ## Step 4 — Report
 
@@ -92,9 +94,10 @@ Post a short summary (as the agent result / PR comment if enabled):
 
 ## Safety rules
 
-- Do NOT merge if `pnpm validate` fails.
+- Do NOT request a merge if `pnpm validate` fails.
 - Do NOT force-merge major-version bumps without checking release notes for
   breaking changes.
+- Do NOT bypass required branch-protection checks or rewrite Dependabot branches.
 - Prefer one consolidated PR over merging conflicted Dependabot branches
   individually.
 - Always work on current `main`, not stale Dependabot branch bases.
