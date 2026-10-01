@@ -1,5 +1,7 @@
 import React, { memo, useState } from 'react'
 
+import styles from './Counter.module.css'
+
 interface Props {}
 
 const Counter: React.FC<Props> = memo(() => {
@@ -9,7 +11,7 @@ const Counter: React.FC<Props> = memo(() => {
     <>
       <button
         onClick={() => setCount((prev) => prev + 1)}
-        className="h-26 my-4 w-52 rounded-sm border border-solid border-white px-4 py-3 hover:bg-blue-200"
+        className={styles.button}
       >
         count is: {count}
       </button>
