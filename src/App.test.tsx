@@ -1,6 +1,9 @@
 import { render, screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
+import { http, HttpResponse } from 'msw'
 import React from 'react'
+
+import { server } from '../mocks/server'
 
 import App from './App'
 
@@ -37,4 +40,30 @@ test('working with msw', async () => {
     },
     { timeout: 5000 },
   )
+})
+
+test('shows an error when loading the document list fails', async () => {
+  server.use(
+    http.get(
+      'http://localhost:3000/api/doclist',
+      () => new HttpResponse(null, { status: 500 }),
+    ),
+  )
+
+  render(<App />)
+
+  expect(await screen.findByRole('alert')).toHaveTextContent(
+    'Unable to load the document list.',
+  )
+})
+
+test('shows an empty state when the document list has no entries', async () => {
+  server.use(
+    http.get('http://localhost:3000/api/doclist', () => HttpResponse.json([])),
+  )
+
+  render(<App />)
+
+  expect(await screen.findByText('No documents available.')).toBeInTheDocument()
+  expect(screen.queryByTestId('loading')).not.toBeInTheDocument()
 })
