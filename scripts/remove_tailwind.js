@@ -1,62 +1,49 @@
-#!/usr/bin/env node
+import { execSync } from 'node:child_process'
+import { readFileSync, unlinkSync } from 'node:fs'
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
 
-const { execSync } = require('node:child_process')
-const fs = require('node:fs')
-const path = require('node:path')
-const { chdir, exit } = require('node:process')
+const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 
-const rootDir = path.join(__dirname, '..')
-
-function removeTailwind() {
-  try {
-    fs.unlinkSync(rootDir + '/tailwind.config.js')
-    console.log('remove tailwind.config.js\n')
-  } catch (e) {
-    if (e.message.includes('no such file or directory'))
-      console.log('tailwind.config.js has already been removed.\n')
+try {
+  unlinkSync(path.join(rootDir, 'tailwind.config.js'))
+  console.log('remove tailwind.config.js\n')
+} catch (error) {
+  if (error.code === 'ENOENT') {
+    console.log('tailwind.config.js has already been removed.\n')
+  } else {
+    throw error
   }
-
-  // npm unlinstall
-  const packageJson = require(rootDir + '/package.json')
-
-  const dependencies = packageJson.dependencies || {}
-  const devDependencies = packageJson.devDependencies || {}
-
-  const tailwindPackages = []
-
-  for (const dep in dependencies) {
-    if (dep.includes('tailwind')) {
-      tailwindPackages.push(dep)
-    }
-  }
-
-  for (const dep in devDependencies) {
-    if (dep.includes('tailwind')) {
-      tailwindPackages.push(dep)
-    }
-  }
-
-  if (tailwindPackages.length === 0) {
-    console.log('TailwindCSS has already been removed.\n')
-    exit()
-  }
-
-  const uninstallCommand = 'npm uninstall ' + tailwindPackages.join(' ')
-
-  chdir(rootDir)
-  // execSync return null when command successful
-  const res = execSync(uninstallCommand, {
-    stdio: [0, 1, 2],
-  })
-
-  if (res !== null && res.status !== 0)
-    console.error('Command Failed: ' + uninstallCommand)
-
-  console.log(tailwindPackages.join('\n'))
-  console.log('Above packages uninstall has been successful.\n')
-  console.log()
-  console.log('Completed remove TailwindCSS.\n')
 }
 
-// run
-removeTailwind()
+const packageJson = JSON.parse(
+  readFileSync(path.join(rootDir, 'package.json'), 'utf8'),
+)
+const dependencies = {
+  ...packageJson.dependencies,
+  ...packageJson.devDependencies,
+}
+const tailwindPackages = Object.keys(dependencies).filter((name) =>
+  name.includes('tailwind'),
+)
+
+if (tailwindPackages.length === 0) {
+  console.log('TailwindCSS has already been removed.\n')
+  process.exit(0)
+}
+
+for (const packageName of tailwindPackages) {
+  if (!/^(?:@[a-z0-9][a-z0-9._-]*\/)?[a-z0-9][a-z0-9._-]*$/.test(packageName)) {
+    throw new Error(`Invalid package name in package.json: ${packageName}`)
+  }
+}
+
+const packageManager = process.platform === 'win32' ? 'pnpm.cmd' : 'pnpm'
+execSync(`${packageManager} remove ${tailwindPackages.join(' ')}`, {
+  cwd: rootDir,
+  stdio: 'inherit',
+})
+
+console.log(tailwindPackages.join('\n'))
+console.log('Above packages uninstall has been successful.\n')
+console.log('Completed remove TailwindCSS.\n')
