@@ -48,7 +48,7 @@ pnpm build           # build production bundle to 'dist' directly
 pnpm prettier        # run prettier for json|yml|css|md|mdx files
 pnpm clean           # remove 'node_modules' 'pnpm-lock.yaml' 'dist' completely
 pnpm preview         # launch a local server for the production bundle
-pnpm remove:tailwind # remove TailwindCSS dependencies
+pnpm remove:tailwind # remove TailwindCSS from the starter
 ```
 
 # CRA to Vite migration guides
