@@ -1,16 +1,18 @@
 import clsx from 'clsx'
 import React from 'react'
 
+import styles from './Spinner.module.css'
+
 const sizes = {
-  lg: 'h-16 w-16',
-  md: 'h-8 w-8',
-  sm: 'h-4 w-4',
-  xl: 'h-24 w-24',
+  lg: styles.lg,
+  md: styles.md,
+  sm: styles.sm,
+  xl: styles.xl,
 }
 
 const variants = {
-  light: 'text-white',
-  primary: 'text-blue-200',
+  light: styles.light,
+  primary: styles.primary,
 }
 
 export type SpinnerProps = {
@@ -28,7 +30,7 @@ const Spinner: React.FC<SpinnerProps> = ({
     <>
       <svg
         className={clsx(
-          'animate-spin',
+          styles.spinner,
           sizes[size],
           variants[variant],
           className,
@@ -39,7 +41,7 @@ const Spinner: React.FC<SpinnerProps> = ({
         data-testid="loading"
       >
         <circle
-          className="opacity-25"
+          className={styles.circle}
           cx="12"
           cy="12"
           r="10"
@@ -47,12 +49,12 @@ const Spinner: React.FC<SpinnerProps> = ({
           strokeWidth="4"
         ></circle>
         <path
-          className="opacity-75"
+          className={styles.path}
           fill="currentColor"
           d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
         ></path>
       </svg>
-      <span className="sr-only">Loading</span>
+      <span className={styles.srOnly}>Loading</span>
     </>
   )
 }
